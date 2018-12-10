@@ -1,0 +1,242 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
+<style>
+    body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+    .social { color:#ffffff;
+    }
+    
+    .rowAlign {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .btn {
+        border: none;
+        padding: 7px 28px;
+        font-size: 16px;
+        display: inline-block;
+        color: white;
+        background: blue;
+    }
+
+    .search {
+        padding: 7px 28px;
+    }
+
+    .head {
+        padding-top: 30px;
+    }
+
+    /*            ANIMATION_FOR_OUR_LISTING*/
+    .zoom {
+        padding-left: 0px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid white;
+        background-color: green;
+        transition: transform .4s;
+        margin: 0 auto;
+    }
+
+    .zoom:hover {
+        -ms-transform: scale(1.3);
+        -webkit-transform: scale(1.3); 
+        transform: scale(1.3); 
+        z-index: 2;
+        cursor: pointer;
+    }
+
+
+    /*            GRID_CENTERED*/
+    .row-centered {
+        text-align:center;
+    }
+
+    .col-centered {
+        display:inline-block;
+        float:none;
+        text-align:left;
+        text-align: center;
+        background-color: #ccc;
+    }
+
+
+
+    /*            PLACEHOLDER_COLOR_CHANGE*/
+    ::-webkit-input-placeholder { 
+        text-align: center;
+        color: grey;
+        font-size: 13px;
+    }
+
+    /*            SEARCH_BUTTON_STYLING*/
+    .btn {
+        background-color: #4CAF50;
+    }
+    buttonEffect {
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+    }
+
+    buttonEffect:hover {
+        background-color: #2E7D32; /* Green */
+        color: white;
+    }
+    u {
+        text-decoration: none;
+        border-bottom: 1px solid white;
+    }
+    .featured {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid white;
+        height: 250px;
+        height: 100%;
+    }
+    .fea {
+        /*                 border: 2px solid white;*/
+        height: 250px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .featured:hover {
+        opacity: 0.7;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    .ourListing {
+        transition: box-shadow .3s;
+        height: 300px;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    }
+    .listings {
+        /*                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+        /*border: 1px solid black;*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid white;
+        height: 100%;
+        transition: box-shadow .3s;
+        transition: transform .3s;
+
+    }
+    .listings:hover {
+        transform: scale(1.1); 
+        z-index: 2;
+        cursor: pointer;
+        border: 2px solid white;
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+
+
+    .row > .zoom {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .linktag {
+        color: white;
+    }
+</style>
+
+<div class="row rowAlign" style="margin-top:0px;">
+    <div class="col-md-12" style="background: rgba(0, 0, 0, 0.8);height: 175px;padding-left: 0px;padding-right: 0px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+
+        <div class="col-md-5" style="height: 100%;">
+            <center>
+                <p class="head" style="color:white;">
+                <div style="color:white;text-align: left;padding-left: 9%;padding-bottom: 2px;">
+                    <a href="#" class="linktag"><u>For Sale </u></a>/
+                    <a href="#" class="linktag"><u>For Rent</u></a>
+                </div>
+                <input class="search" type="texbox" style="background: transparent; border: 1px solid #fff;font-size: 14px;padding-bottom: 9px;margin-right: -4px;height: 40px;color: white;" placeholder="Locality, Pincode, Name etc." size="42%">
+                <button class="btn buttonEffect" style=" border: 1px solid #fff;border-radius: 0px;height: 40px;">Search</button>
+                <div style="color:white;text-align: left;padding-left: 14%;">
+                    <span id="typed" style="white-space:pre;font-size: 20px;color: white" class="typed">
+                    </span>
+                </div>
+                </p>
+            </center>
+        </div>
+
+        <div class="col-md-7" style="height: 100%;">
+            <center>
+
+            </center>
+        </div>
+    </div>
+</div>
+
+<div class="row rowAlign" style="margin-top: 20px">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/1.jpg'); ?>');"></div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea" >
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/2.jpg'); ?>');"></div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/3.jpg'); ?>');"></div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/4.jpg'); ?>');"></div>
+    </div>
+</div>
+
+<div class="row rowAlign" style="margin-top: 0px">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 fea">
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/5.jpg'); ?>');"></div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/6.jpg'); ?>');"></div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/2.jpg'); ?>');"></div>
+    </div>
+</div>
+
+<div style="padding-top:20px;">
+    <center>
+        <h4 style="padding-top:80px; font-size: 27px">OUR LISTINGS</h4>
+    </center>
+</div>
+<div class="row rowAlign" style="margin-top: 5px;margin-bottom: 40px">         
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ourListing">
+        <div class="listings" style="background-image:url('<?php echo base_url('assets/img/buy.jpeg'); ?>');"></div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ourListing" >
+        <div class="listings" style="background-image:url('<?php echo base_url('assets/img/rent.jpeg'); ?>');"></div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ourListing">
+        <div class="listings" style="background-image:url('<?php echo base_url('assets/img/services.jpeg'); ?>');"></div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ourListing">
+        <div class="listings" style="background-image:url('<?php echo base_url('assets/img/projects.jpeg'); ?>');"></div>
+    </div>
+
+</div>
+
+<script>
+    //                FOR AUTO TYPING ANIMATION
+    $("#typed").typed({
+        strings: ["Apartments.", "572306.", "JP Nagar 5th phase."],
+        typeSpeed: 130,
+        startDelay: 0,
+        backSpeed: 100,
+        backDelay: 100,
+        loop: true,
+        cursorChar: "|",
+        contentType: 'html'
+    });
+</script>
+
+

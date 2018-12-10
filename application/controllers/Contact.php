@@ -9,12 +9,6 @@ class Contact extends CI_Controller {
     }
 
     public function index() {
-        $this->load->view('contact');
-    }
-
-    public function map($number = '', $x = '') {
-        echo $number;
-        echo $x;
         $this->load->view('templates/header');
         $this->load->view('templates/navigation');
         $this->load->view('templates/footer');
