@@ -179,28 +179,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="row rowAlign" style="margin-top: 20px">
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
-        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/1.jpg'); ?>');"></div>
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/11.jpg'); ?>');"></div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea" >
-        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/2.jpg'); ?>');"></div>
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/12.jpg'); ?>');"></div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
-        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/3.jpg'); ?>');"></div>
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/13.jpg'); ?>');"></div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
-        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/4.jpg'); ?>');"></div>
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/14.jpg'); ?>');"></div>
     </div>
 </div>
 
 <div class="row rowAlign" style="margin-top: 0px">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 fea">
-        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/5.jpg'); ?>');"></div>
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/15.jpg'); ?>');"></div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
-        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/6.jpg'); ?>');"></div>
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/16.jpg'); ?>');"></div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
-        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/2.jpg'); ?>');"></div>
+        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/17.jpg'); ?>');"></div>
     </div>
 </div>
 
