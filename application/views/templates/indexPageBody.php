@@ -130,6 +130,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         height: 100%;
         transition: box-shadow .3s;
         transition: transform .3s;
+        background-position: center;
 
     }
     .listings:hover {
