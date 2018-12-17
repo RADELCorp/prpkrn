@@ -144,14 +144,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="container feat col-md-4 col-sm-6">
-        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>)">
+        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/2.jpg'); ?>)">
             <div class="overlay1">
                 <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
             </div>
             <div class="overlay0">
                 <div style="color:white;float: left;font-size: 14px;">
-                    <div class="col-xs-6 amount"><span style="color:green">&#x20b9;</span> 1,50,00,000</div>
-                    <div class="col-xs-6 bhk">3 BHK, 4500sqft.</div>
+                    <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                    <div class="col-xs-6 bhk text-right">3 BHK, 4500sqft.</div>
                     <div class="col-xs-12 address">
                         <span>608, 10th Main Rd, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</span><br>
                     </div>
@@ -160,14 +160,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="container feat col-md-4 col-sm-6">
-        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>)">
+        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/3.jpg'); ?>)">
             <div class="overlay1">
                 <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
             </div>
             <div class="overlay0">
                 <div style="color:white;float: left;font-size: 14px;">
-                    <div class="col-xs-6 amount"><span style="color:green">&#x20b9;</span> 1,50,00,000</div>
-                    <div class="col-xs-6 bhk">3 BHK, 4500sqft.</div>
+                    <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                    <div class="col-xs-6 bhk text-right">3 BHK, 4500sqft.</div>
                     <div class="col-xs-12 address">
                         <span>608, 10th Main Rd, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</span><br>
                     </div>
@@ -176,14 +176,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="container feat col-md-4 col-sm-6">
-        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>)">
+        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/4.jpg'); ?>)">
             <div class="overlay1">
                 <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
             </div>
             <div class="overlay0">
                 <div style="color:white;float: left;font-size: 14px;">
-                    <div class="col-xs-6 amount"><span style="color:green">&#x20b9;</span> 1,50,00,000</div>
-                    <div class="col-xs-6 bhk">3 BHK, 4500sqft.</div>
+                    <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                    <div class="col-xs-6 bhk text-right">3 BHK, 4500sqft.</div>
                     <div class="col-xs-12 address">
                         <span>608, 10th Main Rd, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</span><br>
                     </div>
@@ -192,14 +192,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="container feat col-md-4 col-sm-6">
-        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>)">
+        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/5.jpg'); ?>)">
             <div class="overlay1">
                 <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
             </div>
             <div class="overlay0">
                 <div style="color:white;float: left;font-size: 14px;">
-                    <div class="col-xs-6 amount"><span style="color:green">&#x20b9;</span> 1,50,00,000</div>
-                    <div class="col-xs-6 bhk">3 BHK, 4500sqft.</div>
+                    <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                    <div class="col-xs-6 bhk text-right">3 BHK, 4500sqft.</div>
                     <div class="col-xs-12 address">
                         <span>608, 10th Main Rd, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</span><br>
                     </div>
@@ -208,14 +208,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="container feat col-md-4 col-sm-6">
-        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>)">
+        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
             <div class="overlay1">
                 <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
             </div>
             <div class="overlay0">
                 <div style="color:white;float: left;font-size: 14px;">
-                    <div class="col-xs-6 amount"><span style="color:green">&#x20b9;</span> 1,50,00,000</div>
-                    <div class="col-xs-6 bhk">3 BHK, 4500sqft.</div>
+                    <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                    <div class="col-xs-6 bhk text-right">3 BHK, 4500sqft.</div>
                     <div class="col-xs-12 address">
                         <span>608, 10th Main Rd, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</span><br>
                     </div>
@@ -224,14 +224,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="container feat col-md-4 col-sm-6">
-        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>)">
+        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/12.jpg'); ?>)">
             <div class="overlay1">
                 <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
             </div>
             <div class="overlay0">
                 <div style="color:white;float: left;font-size: 14px;">
-                    <div class="col-xs-6 amount"><span style="color:green">&#x20b9;</span> 1,50,00,000</div>
-                    <div class="col-xs-6 bhk">3 BHK, 4500sqft.</div>
+                    <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                    <div class="col-xs-6 bhk text-right">3 BHK, 4500sqft.</div>
                     <div class="col-xs-12 address">
                         <span>608, 10th Main Rd, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</span><br>
                     </div>
@@ -240,14 +240,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="container feat col-md-4 col-sm-6">
-        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>)">
+        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/13.jpg'); ?>)">
             <div class="overlay1">
                 <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
             </div>
             <div class="overlay0">
                 <div style="color:white;float: left;font-size: 14px;">
-                    <div class="col-xs-6 amount"><span style="color:green">&#x20b9;</span> 1,50,00,000</div>
-                    <div class="col-xs-6 bhk">3 BHK, 4500sqft.</div>
+                    <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                    <div class="col-xs-6 bhk text-right">3 BHK, 4500sqft.</div>
                     <div class="col-xs-12 address">
                         <span>608, 10th Main Rd, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</span><br>
                     </div>
@@ -256,14 +256,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="container feat col-md-4 col-sm-6">
-        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>)">
+        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/14.jpg'); ?>)">
             <div class="overlay1">
                 <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
             </div>
             <div class="overlay0">
                 <div style="color:white;float: left;font-size: 14px;">
-                    <div class="col-xs-6 amount"><span style="color:green">&#x20b9;</span> 1,50,00,000</div>
-                    <div class="col-xs-6 bhk">3 BHK, 4500sqft.</div>
+                    <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                    <div class="col-xs-6 bhk text-right">3 BHK, 4500sqft.</div>
                     <div class="col-xs-12 address">
                         <span>608, 10th Main Rd, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</span><br>
                     </div>
@@ -272,14 +272,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="container feat col-md-4 col-sm-6">
-        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>)">
+        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/15.jpg'); ?>)">
             <div class="overlay1">
                 <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
             </div>
             <div class="overlay0">
                 <div style="color:white;float: left;font-size: 14px;">
-                    <div class="col-xs-6 amount"><span style="color:green">&#x20b9;</span> 1,50,00,000</div>
-                    <div class="col-xs-6 bhk">3 BHK, 4500sqft.</div>
+                    <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                    <div class="col-xs-6 bhk text-right">3 BHK, 4500sqft.</div>
                     <div class="col-xs-12 address">
                         <span>608, 10th Main Rd, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</span><br>
                     </div>
@@ -288,14 +288,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="container feat col-md-4 col-sm-6">
-        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>)">
+        <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/16.jpg'); ?>)">
             <div class="overlay1">
                 <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
             </div>
             <div class="overlay0">
                 <div style="color:white;float: left;font-size: 14px;">
-                    <div class="col-xs-6 amount"><span style="color:green">&#x20b9;</span> 1,50,00,000</div>
-                    <div class="col-xs-6 bhk">3 BHK, 4500sqft.</div>
+                    <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                    <div class="col-xs-6 bhk text-right">3 BHK, 4500sqft.</div>
                     <div class="col-xs-12 address">
                         <span>608, 10th Main Rd, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</span><br>
                     </div>
@@ -303,9 +303,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
     </div>
-
 </div>
-
 <nav aria-label="..." style="text-align:center">
     <ul class="pagination">
         <li class="page-item disabled">
