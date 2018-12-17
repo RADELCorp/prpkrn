@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         background-color: rgba(0,0,0,0.7);
         position:absolute;
         top:0;
-        z-index: 2;
+        z-index: 11;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         background-color: rgba(0,0,0,0);
         position:absolute;
         top:0;
-        z-index: 2;
+        z-index: 11;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -101,8 +101,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right" style="background-color: black;">
                   <!--<li><<i class="glyphicon glyphicon-user" id="loginButton" style="margin-top: 20px;margin-right: 20px;font-size:20px;"></i></li>-->
-                    <li><a id="contactUs" href="<?php echo base_url('contact'); ?>" style="cursor:pointer;"><span class="glyphicon glyphicon glyphicon-earphone"  id="contactUs"></span> Contact Us</a></li>
-                    <li><a id="loginButton" style="cursor:pointer;"><span class="glyphicon glyphicon-log-in"  id="loginButton"></span> Login</a></li>
+                    <li><a href="<?php echo base_url('contact'); ?>" style="cursor:pointer;color: white;"><span class="glyphicon glyphicon glyphicon-earphone"  id="contactUs"></span> Contact Us</a></li>
+                    <li><a id="loginButton" style="cursor:pointer;color: white;"><span class="glyphicon glyphicon-log-in"  id="loginButton"></span> Login</a></li>
                 </ul>
             </div>
         </div>
