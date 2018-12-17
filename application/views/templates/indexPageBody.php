@@ -181,7 +181,80 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="row rowAlign" style="margin-top: 20px">
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea">
-        <div class="featured" style="background-image:url('<?php echo base_url('assets/img/11.jpg'); ?>');"></div>
+        <div class="featured" style="background-image:url('<div id="myModal" class="modal" style="padding-top:40px;">
+            <div class="modal-content">
+
+                <div class="mySlides" style="background-image: url('images/11.jpg');">
+                    <div class="numbertext">1 / 4</div>
+                </div>
+                <div class="mySlides" style="background-image: url('images/12.jpg');">
+                    <div class="numbertext">1 / 4</div>
+                </div>
+                <div class="mySlides" style="background-image: url('images/13.jpg');">
+                    <div class="numbertext">1 / 4</div>
+                </div>
+                <div class="mySlides" style="background-image: url('images/14.jpg');">
+                    <div class="numbertext">1 / 4</div>
+                </div>
+                <div class="mySlides" style="background-image: url('images/11.jpg');">
+                    <div class="numbertext">1 / 4</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)" style="background-color:black;">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)" style="background-color:black;">&#10095;</a>
+
+                <div class="caption-container">
+
+                </div>
+
+                <div class="text-center" style="width:100%;text-align: center">
+                    <div class="column" style="background-image: url('images/11.jpg');" onclick="currentSlide(1)"></div>
+                    <div class="column" style="background-image: url('images/12.jpg');" onclick="currentSlide(2)"></div>
+                    <div class="column" style="background-image: url('images/13.jpg');" onclick="currentSlide(3)"></div>
+                    <div class="column" style="background-image: url('images/14.jpg');" onclick="currentSlide(4)"></div>
+<!--                    <div class="column" style="background-image: url('images/15.jpg');" onclick="currentSlide(5)"></div>
+                    <div class="column" style="background-image: url('images/11.jpg');" onclick="currentSlide(6)"></div>
+                    <div class="column" style="background-image: url('images/13.jpg');" onclick="currentSlide(7)"></div>-->
+                </div>
+
+            </div>
+
+            <script>
+
+                var slideIndex = 3;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    captionText.innerHTML = dots[slideIndex - 1].alt;
+                }
+            </script>
+        </div>assets/img/11.jpg'); ?>');"></div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fea" >
         <div class="featured" style="background-image:url('<?php echo base_url('assets/img/12.jpg'); ?>');"></div>

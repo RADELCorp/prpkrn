@@ -117,7 +117,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <form action="">
             <center>
                 <input type="email" class="loginPopup" placeholder="Email id" size="32%"><br>
-                <input id="passkey" class="loginPopup" type="password" style="padding-bottom: 10px;margin-bottom: 5px;" placeholder="Password" size="32%"><br>
+                <input class="loginPopup" type="password" style="padding-bottom: 10px;margin-bottom: 5px;" placeholder="Password" size="32%"><br>
                 <div style="margin-bottom:15px;font-size: 13px;"><input type="checkbox" onclick="showPassword()">Show Password</div>
                 <button class="btn" style="width:247px;background-color: #81C784;border: 1px solid grey;height: 40px;margin-bottom: 10px;"><a href="" >Sign In</a></button>
                 <div>
@@ -140,8 +140,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <input type="text" class="loginPopup" placeholder="First Name" size="32%">
                 <input type="text" class="loginPopup" placeholder="Last Name" size="32%">
                 <input type="email" class="loginPopup" placeholder="Email" size="32%"><br>
-                <input id="passkey" class="loginPopup" type="password" placeholder="Password" size="32%">
-                <input id="passkey" class="loginPopup" type="password" style="padding-bottom: 15px;margin-bottom: 20px;" placeholder="Confirm Password" size="32%"><br>
+                <input class="loginPopup" type="password" placeholder="Password" size="32%">
+                <input class="loginPopup" type="password" style="padding-bottom: 15px;margin-bottom: 20px;" placeholder="Confirm Password" size="32%"><br>
 
                 <button class="btn" style="width:247px;background-color: #81C784;border: 1px solid grey;height: 40px;margin-bottom: 8px;"><a href="" >Register</a></button>
                 <div>

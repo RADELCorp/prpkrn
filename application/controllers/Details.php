@@ -13,6 +13,8 @@ class Details extends CI_Controller {
         $this->load->view('templates/navigation');
         $this->load->view('templates/detailsPageBody');
         $this->load->view('templates/footer');
+                $this->load->view('lightbox');
+
     }
 
 }
