@@ -162,7 +162,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <a href="#" class="linktag"><u>For Rent</u></a>
                 </div>
                 <input class="search" type="texbox" style="background: transparent; border: 1px solid #fff;font-size: 14px;padding-bottom: 9px;margin-right: -4px;height: 40px;color: white;width: 70%" placeholder="Locality, Pincode, Name etc.">
-                <button class="btn" style="height: 40px;border-radius: 0px;">Search</button>
+                <button class="btn" style="width: 30%;height: 40px;border-radius: 0px;">Search</button>
                 <div style="color:white;text-align: left;padding-left: 14%;">
                     <span id="typed" style="white-space:pre;font-size: 20px;color: white" class="typed">
                     </span>
