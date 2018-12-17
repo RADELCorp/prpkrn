@@ -39,22 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         margin-left: 20px;
         margin-right: 20px;
     }
-    .owl-prev,
-    .owl-next {
-        position: absolute;
-        top: 40%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: 80px;
-    }
 
-    .owl-prev {
-        left: -6rem;
-    }
-
-    .owl-next {
-        right: -6rem;
-    }
     div.vertical{
         margin-top: 30px;
         margin-bottom: 30px;
@@ -76,11 +61,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         padding: 0 8px;
     }
 
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
 
     .column {
         width: 10%;
@@ -94,13 +74,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     /* The Modal (background) */
     .modal {
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
+        z-index: 25;
         width: 100%;
         height: 100%;
         overflow: auto;
+
     }
 
     /* Modal Content */
@@ -131,7 +109,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         font-size: 20px;
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
-        user-select: none;
         -webkit-user-select: none;
     }
 
@@ -176,10 +153,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </style>
 
-<button onclick="testing();">CLick here</button>
+
 <div class="container">
     <!--            <div class="row">-->
-    <div class="col-md-12" style="height: 50px">
+    <div class="col-md=12" style="height: 50px">
         <div class="col-sm-1">
             <button class="btn" style="width:60px; height:60px; margin-top:20px; margin-bottom: 10px">
                 <span class="glyphicon glyphicon-arrow-left"></span> </button>
@@ -198,14 +175,52 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
     </div>
-    <div class="col-md-12">
+</div>
 
-        <script>
-        function testing(){
-            alert('Stage3');
-        }
-        </script>
+<!--NEW LIGHT BOX ADD IT HERE-->
+<div id="myModal" class="modal" style="padding-top:10px;display: block;position: inherit;">
+    <div class="modal-content" style="padding-top:20px;">
+        <div class="mySlides" style="background-image:url('<?php echo base_url('assets/img/11.jpg'); ?>');">
+            <div class="numbertext">1 / 4</div>
+        </div>
+        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');">
+            <div class="numbertext">1 / 4</div>
+        </div>
+        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');">
+            <div class="numbertext">1 / 4</div>
+        </div>
+        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');">
+            <div class="numbertext">1 / 4</div>
+        </div>
+        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/15.jpg'); ?>');">
+            <div class="numbertext">1 / 4</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)" style="background-color:black;">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" style="background-color:black;">&#10095;</a>
+
+        <div class="caption-container">
+
+        </div>
+
+        <div class="text-center" style="width:100%;text-align: center">
+            <div class="column" style="background-image: url('<?php echo base_url('assets/img/11.jpg'); ?>');" onclick="currentSlide(1)"></div>
+            <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(2)"></div>
+            <div class="column" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');" onclick="currentSlide(3)"></div>
+            <div class="column" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');" onclick="currentSlide(4)"></div>
+            <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(5)"></div>
+
+            <!--                    <div class="column" style="background-image: url('images/15.jpg');" onclick="currentSlide(5)"></div>
+                                <div class="column" style="background-image: url('images/11.jpg');" onclick="currentSlide(6)"></div>
+                                <div class="column" style="background-image: url('images/13.jpg');" onclick="currentSlide(7)"></div>-->
+        </div>
+
     </div>
+
+</div>
+
+<!--LIGHT BOX ENDS HERE-->
+<div class="container">
     <div class="col-md-12 box" style="text-align: left;background-color:#212121; margin-top: 2%; color: #EEEEEE">
         <div class="vl"></div>
         <div class="col-md-6" style="text-align: left; height:200px; ">
@@ -244,6 +259,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <h3><br/> <u>Similar properties</u> </h3>
     <br/>
 </div>
+
 <div class="container">
     <div style="text-align:center; margin-left: 7%; margin-right: 7%">
         <div class="col-md-12" style="height:20%">
@@ -291,41 +307,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }
     })
 </script>
-<!--NEW LIGHT BOX ADD IT HERE-->
-<div id="myModal" class="modal" style="padding-top:40px;">
-    <div class="modal-content">
+<script type="text/javascript">
+    var slideIndex = 3;
+    showSlides(slideIndex);
 
-        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');">
-            <div class="numbertext">1 / 4</div>
-        </div>
-        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');">
-            <div class="numbertext">1 / 4</div>
-        </div>
-        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/1.jpg'); ?>');">
-            <div class="numbertext">1 / 4</div>
-        </div>
-        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');">
-            <div class="numbertext">1 / 4</div>
-        </div>
-        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/15.jpg'); ?>');">
-            <div class="numbertext">1 / 4</div>
-        </div>
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
 
-        <a class="prev" onclick="plusSlides(-1)" style="background-color:black;">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)" style="background-color:black;">&#10095;</a>
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
 
-        <div class="caption-container">
+    function showSlides(n) {
+        var i;
 
-        </div>
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
 
-        <div class="text-center" style="width:100%;text-align: center">
-            <div class="column" style="background-image: url('images/11.jpg');" onclick="currentSlide(1)"></div>
-            <div class="column" style="background-image: url('images/12.jpg');" onclick="currentSlide(2)"></div>
-            <div class="column" style="background-image: url('images/13.jpg');" onclick="currentSlide(3)"></div>
-            <div class="column" style="background-image: url('images/14.jpg');" onclick="currentSlide(4)"></div>
-        </div>
-    </div>
-
-
-</div>
-<!--LIGHT BOX ENDS HERE-->
+    }
+</script>
