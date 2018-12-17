@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
     .social { color:#ffffff;
     }
-    
+
     .rowAlign {
         margin-top: 20px;
         margin-left: 20px;
@@ -99,6 +99,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         border: 2px solid white;
         height: 250px;
         height: 100%;
+        background-position: center;
     }
     .fea {
         /*                 border: 2px solid white;*/
@@ -160,8 +161,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <a href="#" class="linktag"><u>For Sale </u></a>/
                     <a href="#" class="linktag"><u>For Rent</u></a>
                 </div>
-                <input class="search" type="texbox" style="background: transparent; border: 1px solid #fff;font-size: 14px;padding-bottom: 9px;margin-right: -4px;height: 40px;color: white;" placeholder="Locality, Pincode, Name etc." size="42%">
-                <button class="btn buttonEffect" style=" border: 1px solid #fff;border-radius: 0px;height: 40px;">Search</button>
+                <input class="search" type="texbox" style="background: transparent; border: 1px solid #fff;font-size: 14px;padding-bottom: 9px;margin-right: -4px;height: 40px;color: white;width: 70%" placeholder="Locality, Pincode, Name etc.">
+                <button class="btn" style="height: 40px;border-radius: 0px;">Search</button>
                 <div style="color:white;text-align: left;padding-left: 14%;">
                     <span id="typed" style="white-space:pre;font-size: 20px;color: white" class="typed">
                     </span>

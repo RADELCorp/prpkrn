@@ -2,8 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <style>
-
-
     /*STYLING THE LOGIN MODAL*/
     .modalSignin {
         width: 100%;
@@ -17,7 +15,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         align-items: center;
         display: none;
         position: fixed;
-
     }
     .modalRegister {
         width: 100%;
@@ -90,8 +87,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         background: #f7f9fc;
     }
 </style>
-<div class="row rowAlign" style="margin-bottom:0px;padding-bottom: 0px;">
-    <nav class="navbar navbar-inverse" style="height:55px;border-radius: 0px;">
+<div class="row rowAlign" style="margin-bottom:0px;padding-bottom: 0px;z-index: 5">
+    <nav class="navbar navbar-inverse" style="height:55px;border-radius: 0px;z-index: 10">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -102,7 +99,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <a class="navbar-brand" href="<?php echo base_url(); ?>">PropKorner</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" style="background-color: black;">
                   <!--<li><<i class="glyphicon glyphicon-user" id="loginButton" style="margin-top: 20px;margin-right: 20px;font-size:20px;"></i></li>-->
                     <li><a id="contactUs" href="<?php echo base_url('contact'); ?>" style="cursor:pointer;"><span class="glyphicon glyphicon glyphicon-earphone"  id="contactUs"></span> Contact Us</a></li>
                     <li><a id="loginButton" style="cursor:pointer;"><span class="glyphicon glyphicon-log-in"  id="loginButton"></span> Login</a></li>
