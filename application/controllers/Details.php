@@ -9,12 +9,12 @@ class Details extends CI_Controller {
     }
 
     public function index() {
+        $this->load->library('javascript');
         $this->load->view('templates/header');
         $this->load->view('templates/navigation');
         $this->load->view('templates/detailsPageBody');
         $this->load->view('templates/footer');
-                $this->load->view('lightbox');
-
+        $this->load->view('templates/lightbox_script');
     }
 
 }
