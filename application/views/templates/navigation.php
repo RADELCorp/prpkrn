@@ -87,7 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         background: #f7f9fc;
     }
 </style>
-<div class="row rowAlign" style="margin-bottom:0px;padding-bottom: 0px;z-index: 5">
+<div class="row rowAlign" style="margin-bottom:0px;padding-bottom: 0px;z-index: 5;margin: 0">
     <nav class="navbar navbar-inverse" style="height:55px;border-radius: 0px;z-index: 10">
         <div class="container-fluid">
             <div class="navbar-header">

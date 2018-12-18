@@ -156,10 +156,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="container">
     <!--            <div class="row">-->
-    <div class="col-md=12" style="height: 50px">
+    <div class="col-md-12" style="">
         <div class="col-sm-1">
-            <button class="btn" style="width:60px; height:60px; margin-top:20px; margin-bottom: 10px">
-                <span class="glyphicon glyphicon-arrow-left"></span> </button>
+            <a href="<?php echo base_url('search'); ?>">
+                <button class="btn" style="width:60px; height:60px; margin-top:20px; margin-bottom: 10px">
+                    <span class="glyphicon glyphicon-arrow-left"></span>
+                </button>
+            </a>
         </div>
         <div class="row">
             <div class="col-md-10">
@@ -178,47 +181,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <!--NEW LIGHT BOX ADD IT HERE-->
-<div id="myModal" class="modal" style="padding-top:10px;display: block;position: inherit;">
-    <div class="modal-content" style="padding-top:20px;">
-        <div class="mySlides" style="background-image:url('<?php echo base_url('assets/img/11.jpg'); ?>');">
-            <div class="numbertext">1 / 4</div>
-        </div>
-        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');">
-            <div class="numbertext">1 / 4</div>
-        </div>
-        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');">
-            <div class="numbertext">1 / 4</div>
-        </div>
-        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');">
-            <div class="numbertext">1 / 4</div>
-        </div>
-        <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/15.jpg'); ?>');">
-            <div class="numbertext">1 / 4</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)" style="background-color:black;">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)" style="background-color:black;">&#10095;</a>
-
-        <div class="caption-container">
-
-        </div>
-
-        <div class="text-center" style="width:100%;text-align: center">
-            <div class="column" style="background-image: url('<?php echo base_url('assets/img/11.jpg'); ?>');" onclick="currentSlide(1)"></div>
-            <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(2)"></div>
-            <div class="column" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');" onclick="currentSlide(3)"></div>
-            <div class="column" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');" onclick="currentSlide(4)"></div>
-            <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(5)"></div>
-
-            <!--                    <div class="column" style="background-image: url('images/15.jpg');" onclick="currentSlide(5)"></div>
-                                <div class="column" style="background-image: url('images/11.jpg');" onclick="currentSlide(6)"></div>
-                                <div class="column" style="background-image: url('images/13.jpg');" onclick="currentSlide(7)"></div>-->
-        </div>
-
+<div class="modal-content" style="padding-top:20px;box-shadow: 0 0;border: 0;">
+    <div class="mySlides" style="background-image:url('<?php echo base_url('assets/img/11.jpg'); ?>');">
+        <div class="numbertext">1 / 4</div>
     </div>
-
+    <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');">
+        <div class="numbertext">1 / 4</div>
+    </div>
+    <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');">
+        <div class="numbertext">1 / 4</div>
+    </div>
+    <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');">
+        <div class="numbertext">1 / 4</div>
+    </div>
+    <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/15.jpg'); ?>');">
+        <div class="numbertext">1 / 4</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)" style="background-color:black;">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" style="background-color:black;">&#10095;</a>
+    <div class="caption-container"></div>
+    <div class="text-center" style="width:100%;text-align: center">
+        <div class="column" style="background-image: url('<?php echo base_url('assets/img/11.jpg'); ?>');" onclick="currentSlide(1)"></div>
+        <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(2)"></div>
+        <div class="column" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');" onclick="currentSlide(3)"></div>
+        <div class="column" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');" onclick="currentSlide(4)"></div>
+        <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(5)"></div>
+    </div>
 </div>
-
 <!--LIGHT BOX ENDS HERE-->
 <div class="container">
     <div class="col-md-12 box" style="text-align: left;background-color:#212121; margin-top: 2%; color: #EEEEEE">
