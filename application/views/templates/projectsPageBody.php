@@ -41,13 +41,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         background-size: cover; 
         height:300px; 
         width: 31%;
+        background-position: center;
     }
     .feat:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-repeat: no-repeat;
         background-size: cover;
-        border: 2px solid white;
-        height: 250px;   //Darshan's code
+        border: 1px solid white;
+        height: 300px;   //Darshan's code
     }
     #custom-search-input{
         padding: 3px;
@@ -107,31 +108,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="row">
         <div class="col-md-12" style="margin-top: 4%; text-align: center">
-            <div class="col-md-3 feat" style="margin-right: 3%;background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>);">
+            <div class="col-md-3 col-xs-4 feat" style="margin-right: 3%;background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>);">
                 <div class="overlaytext"><p style="font-size: 17px;color: black;margin-top: 4%">Lorem ipsum</p></div>
             </div>
-            <div class="col-md-3 feat" style="margin-right: 3%;background-image: url(<?php echo base_url('assets/img/2.jpg'); ?>);">
+            <div class="col-md-3 col-xs-4 feat" style="margin-right: 3%;background-image: url(<?php echo base_url('assets/img/2.jpg'); ?>);">
                 <div class="overlaytext"><p style="font-size: 17px;color: black;margin-top: 4%">Lorem ipsum</p></div>
             </div>
-            <div class="col-md-3 feat" style="background-image: url(<?php echo base_url('assets/img/3.jpg'); ?>);">
+            <div class="col-md-3 col-xs-4 feat" style="background-image: url(<?php echo base_url('assets/img/3.jpg'); ?>);">
                 <div class="overlaytext"><p style="font-size: 17px;color: black;margin-top: 4%">Lorem ipsum</p></div>
             </div>
-            <div class="col-md-3 feat" style="background-image: url(<?php echo base_url('assets/img/4.jpg'); ?>);margin-top: 3%">
+            <div class="col-md-3 col-xs-4 feat" style="margin-right: 3%;background-image: url(<?php echo base_url('assets/img/4.jpg'); ?>);margin-top: 3%">
                 <div class="overlaytext"><p style="font-size: 17px;color: black;margin-top: 4%">Lorem ipsum</p></div>
             </div>
-            <div class="col-md-3 feat" style="background-image: url(<?php echo base_url('assets/img/5.jpg'); ?>);margin-top: 3%">
+            <div class="col-md-3 col-xs-4 feat" style="margin-right: 3%;background-image: url(<?php echo base_url('assets/img/5.jpg'); ?>);margin-top: 3%">
                 <div class="overlaytext"><p style="font-size: 17px;color: black;margin-top: 4%">Lorem ipsum</p></div>
             </div>
-            <div class="col-md-3 feat" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>);margin-top: 3%">
+            <div class="col-md-3 col-xs-4 feat" style="background-image: url(<?php echo base_url('assets/img/1.jpg'); ?>);margin-top: 3%">
                 <div class="overlaytext"><p style="font-size: 17px;color: black;margin-top: 4%">Lorem ipsum</p></div>
             </div>
-            <div class="col-md-3 feat" style="background-image: url(<?php echo base_url('assets/img/2.jpg'); ?>);margin-top: 3%; margin-bottom: 5%">
+            <div class="col-md-3 col-xs-4 feat" style="margin-right: 3%;background-image: url(<?php echo base_url('assets/img/2.jpg'); ?>);margin-top: 3%; margin-bottom: 5%">
                 <div class="overlaytext"><p style="font-size: 17px;color: black;margin-top: 4%">Lorem ipsum</p></div>
             </div>
-            <div class="col-md-3 feat" style="background-image: url(<?php echo base_url('assets/img/3.jpg'); ?>);margin-top: 3%; margin-bottom: 5%">
+            <div class="col-md-3 col-xs-4 feat" style="margin-right: 3%;background-image: url(<?php echo base_url('assets/img/3.jpg'); ?>);margin-top: 3%; margin-bottom: 5%">
                 <div class="overlaytext"><p style="font-size: 17px;color: black;margin-top: 4%">Lorem ipsum</p></div>
             </div>
-            <div class="col-md-3 feat" style="background-image: url(<?php echo base_url('assets/img/4.jpg'); ?>);margin-top: 3%; margin-bottom: 5%">
+            <div class="col-md-3 col-xs-4 feat" style="background-image: url(<?php echo base_url('assets/img/4.jpg'); ?>);margin-top: 3%; margin-bottom: 5%">
                 <div class="overlaytext"><p style="font-size: 17px;color: black;margin-top: 4%">Lorem ipsum</p></div>
             </div>
         </div> 
