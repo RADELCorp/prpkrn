@@ -30,15 +30,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="col-md-12 col-sm-12">
             <div class="col-md-7 col-sm-7" style="background-color: #E0E0E0; margin-top: 3%; padding-top: 2%; padding-bottom: 2%;">
-                    <div class="form-group form-inline">
-                        <label for="email">Email :</label>
-                        <input type="email" class="form-control" id="email" style="width: 100%">
-                    </div>
+                  <div class="form-group form-inline">
+                    <label for="name">Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="name" class="form-control" id="name" style="width: 80%; ">
+                </div>
+                  <div class="form-group form-inline">
+                    <label for="email">Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="email" class="form-control" id="email" style="width: 80%;">
+                </div>
                 <div class="form-group form-inline">
-                        <label for="message">Message :</label>
-                        <input type="text" class="form-control input-lg" id="message" style="width: 100%; height:100px ">
-                    </div>
+                    <label for="number">Mobile :&nbsp;&nbsp;</label>
+                    <input type="number" class="form-control" id="number" style="width: 80%; margin-left: 1%">
+                </div>
+                <div class="form-group form-inline">
+                    <label for="message">Message :</label>
+                    <textarea class="form-control md-textarea" rows="5" id="comment" style="width:80%"></textarea>
+                </div>
+                <div style="text-align: right">
+                    <button type="button" onclick="message()" class="btn btn-primary">Submit</button>
+                    
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-5" style="text-align:center">
+                <h1>
+                   <br/> <br/>Write to us <br/>and we will <br/>get back to you :)
+                </h1>
             </div>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    function message() {
+        alert("Submit successful")
+    }
+</script>   
