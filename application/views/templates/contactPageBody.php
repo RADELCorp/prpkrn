@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <div class="form-group form-inline">
                     <label for="number">Mobile :&nbsp;&nbsp;</label>
-                    <input type="number" class="form-control" id="number" style="width: 80%; margin-left: 1%">
+                    <input type="text" class="form-control" id="number" style="width: 80%; margin-left: 1%">
                 </div>
                 <div class="form-group form-inline">
                     <label for="message">Message :</label>
