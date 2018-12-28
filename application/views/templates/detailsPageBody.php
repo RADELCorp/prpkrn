@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     /* The Modal (background) */
     .modal {
-        z-index: 25;
+        z-index: calc;
         width: 100%;
         height: 100%;
         overflow: auto;
@@ -155,39 +155,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         margin-top: 12px;
         font-size: 12px;
     }
-    .align-ammenities img,span{
+    .align-ammenities > img{
+       width:18%;
+       padding: 5px;
+    }
+    
+    .align-ammenities > span{
        width:18%;
        padding: 5px;
     }
 </style>
 
-
 <div class="container">
-    <!--            <div class="row">-->
-    <div class="col-md-12" style="">
-        <div class="col-sm-1">
+    <div class="col-md-12 col-xs-12">
+        <div class="col-md-1 col-xs-2">
             <a href="<?php echo base_url('search'); ?>">
-                <button class="btn" style="width:60px; height:60px; margin-top:20px; margin-bottom: 10px">
+                <button class="btn btn-lg" style="width:auto; height:inherit;">
                     <span class="glyphicon glyphicon-arrow-left"></span>
                 </button>
             </a>
         </div>
-        <div class="row">
-            <div class="col-md-10">
-                <div class="row">
-                    <h2 style=" font-weight: bold; "> Viemann Complex </h2>
-                    <h6 style="font-weight: light;"> Jayanagar 4th block, Bengaluru </h6>
-                </div>
+        <div class="col-md-9 col-xs-6">
+            <div class="row">
+                <p style=" font-weight: bold; font-size: 20px; "> Viemann Complex </p>
+                <p style="font-weight: lighter; font-size: 12px; margin-top: -1%"> Jayanagar 4th block, Bengaluru </p>
             </div>
-            <div class="col-md-1" style="margin-top:30px; margin-right: -30%"> 
-                <button class="btn">
-                    <span class="glyphicon glyphicon-star-empty"></span>
-                </button>
-            </div>
+        </div>
+        <div class="col-md-1 col-xs-2" > 
+            <button class="btn-md btn btn-sm">
+                <span class="glyphicon glyphicon-star-empty"> Save</span>
+            </button>
+        </div>
+        <div class="col-md-1 col-xs-2" > 
+            <button class="btn-md btn btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
+                <span class="glyphicon glyphicon-phone-alt"> Contact</span>
+            </button>
         </div>
     </div>
 </div>
-
 <!--NEW LIGHT BOX ADD IT HERE-->
 <div class="modal-content" style="padding-top:20px;box-shadow: 0 0;border: 0;">
     <div class="mySlides" style="background-image:url('<?php echo base_url('assets/img/11.jpg'); ?>');">
@@ -318,6 +323,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
+<div id="reqForm" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content" role="document">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" style="transform: rotate(45deg)">&times;</button>
+                <h4 class="modal-title">Fill up this request form</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group form-inline">
+                    <label for="name">Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="name" class="form-control" id="name" style="width: 80%; ">
+                </div>
+                <div class="form-group form-inline">
+                    <label for="email">Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="email" class="form-control" id="email" style="width: 80%;">
+                </div>
+                <div class="form-group form-inline">
+                    <label for="number">Mobile :&nbsp;&nbsp;</label>
+                    <input type="text" class="form-control" id="number" style="width: 80%; margin-left: 1%">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit & Get Info</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Ends -->
 
 <script type="text/javascript">
     $(".category-wrapper").owlCarousel({
@@ -352,3 +386,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     })
 </script>
 
+<script type="text/javascript">
+    function reqFormSubmit(){
+        alert("Successful");
+    }
+</script>
