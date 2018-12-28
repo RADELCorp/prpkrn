@@ -117,8 +117,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         content: '\20B9';
     }
 </style>
-<div class="row" style="padding: 10px;">
-    <div class="col-md-8">
+<div class="container" style="padding: 10px; text-align: center">
+    <div>
         <input type="text" placeholder="Apartment, Area etc.," style="width: 70%;height: 40px;padding: 5px;">
         <button class="btn" style="height:40px; border-radius: 0px;">Search</button>
     </div>
@@ -315,18 +315,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </a>
 </div>
-<nav aria-label="..." style="text-align:center">
-    <ul class="pagination">
-        <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1">Previous</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item active">
-            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#">Next</a>
-        </li>
-    </ul>
-</nav>
+
