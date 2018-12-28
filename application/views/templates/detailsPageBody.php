@@ -43,9 +43,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     div.vertical{
         margin-top: 30px;
         margin-bottom: 30px;
-        width: 2px;
+        /*width: 1px;*/
         background-color: whitesmoke;
-        height: 170px; 
+        height: 18ch; 
         float: left; 
     }
     .social { 
@@ -150,7 +150,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         background-size: contain;
         background-repeat: no-repeat;
     }
-
+    .align-ammenities{
+        padding:0px;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    .align-ammenities img,span{
+       width:18%;
+       padding: 5px;
+    }
 </style>
 
 
@@ -168,7 +176,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="col-md-10">
                 <div class="row">
                     <h2 style=" font-weight: bold; "> Viemann Complex </h2>
-                    <h6 style="font-weight: light";> Jayanagar 4th block, Bengaluru </h6>
+                    <h6 style="font-weight: light;"> Jayanagar 4th block, Bengaluru </h6>
                 </div>
             </div>
             <div class="col-md-1" style="margin-top:30px; margin-right: -30%"> 
@@ -210,29 +218,75 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!--LIGHT BOX ENDS HERE-->
 <div class="container">
-    <div class="col-md-12 box" style="text-align: left;background-color:#212121; margin-top: 2%; color: #EEEEEE">
-        <div class="vl"></div>
-        <div class="col-md-6" style="text-align: left; height:200px; ">
-            <h3 style="text-align: justify; font-weight: bold"><u>DESCRIPTION</u> </h3>
-            <h5 style="position: relative; text-align: justify; line-height: 1.5">
-                The premium 5, 4 & 3 BHK apartments from Tulip Infratech, Tulip Ace homes have been developed to surpass even the company's other residential projects in terms of excellence. Tulip Infratech, known for delivering high-class services has gone too far in its approach this time and has come up with homes that talk for themselves just like a pole star shines bright among a cluster of million other stars.
-            </h5>
-        </div>
-        <div class="vertical"></div>
-        <div class="col-md-5" style="text-align: left; font-weight: bold; height:200px;">
-            <h3 style="text-align: left; font-weight: bold; margin-left: 3% "><u>PROPERTY INFORMATION </u></h3>
-            <div class="col-md-6" style="line-height:1.75">
-                <h5>Price : 1,50,00,000 INR </h5>  
-                <h5>Status : Available </h5> 
-                <h5>Year of completion : 2018</h5>
-            </div>
-            <div class="col-md-6" style="line-height: 1.75">
-                <h5> Area : 2,800 sq.ft </h5>
-                <h5> BHK : 4 </h5>
-                <h5> Furnishing : Full</h5>
+    <div class="col-md-12 col-sm-12 col-xs-12 box" style="text-align: left;background-color:#F5F5F5; margin-top: 2%; color: black">
+        <div class="col-md-12" style="border-bottom:1px solid grey;">
+            <div class="col-md-7 col-sm-7 col-xs-11" style="text-align: left;">
+                <h4 style="text-align: justify; font-weight: bold"><u>DESCRIPTION</u> </h4>
+                <h6 style="position: relative; text-align: justify; line-height: 1.5">
+                    The premium 5, 4 & 3 BHK apartments from Tulip Infratech, Tulip Ace homes have been developed to surpass even the company's other residential projects in terms of excellence. Tulip Infratech, known for delivering high-class services has gone too far in its approach this time and has come up with homes that talk for themselves just like a pole star shines bright among a cluster of million other stars.
+                </h6>
             </div>
 
+            <div class="col-md-5 col-sm-5 col-xs-11" style="text-align: left; font-weight: bold;">
+                <h4 style="text-align: left; font-weight: bold; margin-left: 3% "><u>PROPERTY INFORMATION </u></h4>
+                <div class="col-md-6" style="line-height:1.75">
+                    <h6>Price : 1,50,00,000 INR </h6>  
+                    <h6>Status : Available </h6> 
+                    <h6>Year of completion : 2018</h6>
+                </div>
+                <div class="col-md-6" style="line-height: 1.75">
+                    <h6> Area : 2,800 sq.ft </h6>
+                    <h6> BHK : 4 </h6>
+                    <h6> Furnishing : Full</h6>
+                </div>
+
+            </div>
         </div>
+        <div class="col-md-12" style="margin-top:6px;">
+            <div class="container" style="height: auto;padding-bottom: 25px;">
+                <div style="font-weight: bold;text-decoration: underline;font-size: 17px;margin-top: 1px;">AMENITIES</div>
+                <div class="col-md-12" style="padding:0px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/cctv.png'); ?>"/><span>CCTV GUIDLINES</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/clubhouse.png'); ?>"/><span>CLUB HOUSE</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/gym.png'); ?>"/><span>GYM</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/indoorgames.png'); ?>"/><span>INDOOR GAMES</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/kidsarea.png'); ?>"/><span>KIDS AREA</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/lift.png'); ?>"/><span>LIFT</span>
+                    </div>
+                </div>
+                 <div class="col-md-12" style="padding:0px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/swimming.png'); ?>"/><span>SWIMMING</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/waterharvesting.png'); ?>"/><span>WATER HARVESTING</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/parking.png'); ?>"/><span>PARKING</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/sewage.png'); ?>"/><span>WATER SEWAGE</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/powerbackup.png'); ?>"/><span>POWER BACKUP</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
+                        <img src="<?php echo base_url('assets/img/partyhall.png'); ?>"/><span>PARTY HALL</span>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
     <div class="col-md-12 location" style="text-align:center">
         <br/>
@@ -243,6 +297,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15554.77134221551!2d77.5905968!3d12.92745305!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77fa77df36f6afa7!2sRADEL+CORP!5e0!3m2!1sen!2sin!4v1542622320218" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         <br/>
     </div>  
+
 </div>
 <div class="text" style="text-align:left; margin-left: 15%">
     <h3><br/> <u>Similar properties</u> </h3>
@@ -296,35 +351,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }
     })
 </script>
-<script type="text/javascript">
-    var slideIndex = 3;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-
-    }
-</script>
