@@ -52,14 +52,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <p>+91-8945687598</p>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 hidden-xs" style="padding-left: 8%">
+            <div class="col-md-3 col-sm-3 col-xs-12 hidden-xs" style="padding-left: 6%">
                 <p class="footertitle"><b>FOLLOW</b></p>
                 <hr style="margin-top:1%" width="45px;" align="left">
-                <div class="footerSubHeadings">
-                    <p><a href="#" class="social">INSTAGRAM </a></p>
-                    <p><a href="#" class="social">TWITTER </a></p>
-                    <p><a href="#" class="social">GOOGLE+ </a></p>
-                    <p><a href="#" class="social">FACEBOOK </a></p>
+                <div class="footerSubHeadings col-sm-12" style="margin-left: -6%">
+                    <a href="#">  
+                        <div class="col-sm-3" style="background-image: url('<?php echo base_url('assets/img/instagram.png'); ?>'); background-size: contain; background-repeat: no-repeat; height:25px"></div>
+                    </a>
+                    <a href="#">  
+                        <div class="col-sm-3" style="background-image: url('<?php echo base_url('assets/img/facebook.png'); ?>'); background-size: contain; background-repeat: no-repeat; height:25px"></div>
+                    </a>
+                    <a href="#">  
+                        <div class="col-sm-3" style="background-image: url('<?php echo base_url('assets/img/twitter.png'); ?>'); background-size: contain; background-repeat: no-repeat; height:25px"></div>
+                    </a>
+                    <a href="#">  
+                        <div class="col-sm-3" style="background-image: url('<?php echo base_url('assets/img/google.png'); ?>'); background-size: contain; background-repeat: no-repeat; height:25px"></div>
+                    </a>
                 </div>
             </div>
             <hr style="margin-top:1%" width="95%;">
