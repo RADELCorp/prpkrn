@@ -170,7 +170,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-md-12 col-xs-12">
         <div class="col-md-1 col-xs-2">
             <a href="<?php echo base_url('search'); ?>">
-                <button class="btn btn-lg" style="width:auto; height:inherit;">
+                <button class="btn btn-md" style="width:auto; height:50px;">
                     <span class="glyphicon glyphicon-arrow-left"></span>
                 </button>
             </a>
@@ -181,12 +181,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p style="font-weight: lighter; font-size: 12px; margin-top: -1%"> Jayanagar 4th block, Bengaluru </p>
             </div>
         </div>
-        <div class="col-md-1 col-xs-2" > 
+        <div class="col-md-1 col-xs-3" style="margin-bottom:1%"> 
             <button class="btn-md btn btn-sm">
                 <span class="glyphicon glyphicon-star-empty"> Save</span>
             </button>
         </div>
-        <div class="col-md-1 col-xs-2" > 
+        <div class="col-md-1 col-xs-3" > 
             <button class="btn-md btn btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
                 <span class="glyphicon glyphicon-phone-alt"> Contact</span>
             </button>
@@ -225,15 +225,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="container">
     <div class="col-md-12 col-sm-12 col-xs-12 box" style="text-align: left;background-color:#F5F5F5; margin-top: 2%; color: black">
         <div class="col-md-12" style="border-bottom:1px solid grey;">
-            <div class="col-md-7 col-sm-7 col-xs-11" style="text-align: left;">
-                <h4 style="text-align: justify; font-weight: bold"><u>DESCRIPTION</u> </h4>
+            <div class="col-md-7 col-sm-7 col-xs-11">
+                <h4 style="text-align: justify; font-weight: bold; text-align: center"><u>DESCRIPTION</u> </h4>
                 <h6 style="position: relative; text-align: justify; line-height: 1.5">
                     The premium 5, 4 & 3 BHK apartments from Tulip Infratech, Tulip Ace homes have been developed to surpass even the company's other residential projects in terms of excellence. Tulip Infratech, known for delivering high-class services has gone too far in its approach this time and has come up with homes that talk for themselves just like a pole star shines bright among a cluster of million other stars.
                 </h6>
             </div>
 
-            <div class="col-md-5 col-sm-5 col-xs-11" style="text-align: left; font-weight: bold;">
-                <h4 style="text-align: left; font-weight: bold; margin-left: 3% "><u>PROPERTY INFORMATION </u></h4>
+            <div class="col-md-5 col-sm-5 col-xs-11" style="text-align: center; font-weight: bold;">
+                <h4 style="text-align: left; font-weight: bold; margin-left: 3%; text-align: center "><u>PROPERTY INFORMATION </u></h4>
                 <div class="col-md-6" style="line-height:1.75">
                     <h6>Price : 1,50,00,000 INR </h6>  
                     <h6>Status : Available </h6> 
@@ -249,7 +249,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="col-md-12" style="margin-top:6px;">
             <div class="container" style="height: auto;padding-bottom: 25px;">
-                <div style="font-weight: bold;text-decoration: underline;font-size: 17px;margin-top: 1px;">AMENITIES</div>
+                <div style="font-weight: bold;text-decoration: underline;font-size: 17px;margin-top: 1px; text-align: center; margin-left: -10%">AMENITIES</div>
                 <div class="col-md-12" style="padding:0px;">
                     <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
                         <img src="<?php echo base_url('assets/img/cctv.png'); ?>"/><span>CCTV GUIDLINES</span>
@@ -304,7 +304,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>  
 
 </div>
-<div class="text" style="text-align:left; margin-left: 15%">
+<div class="text" style="text-align:center;">
     <h3><br/> <u>Similar properties</u> </h3>
     <br/>
 </div>
