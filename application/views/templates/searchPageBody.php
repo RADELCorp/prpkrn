@@ -2,6 +2,9 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 <style>
     .navigation-clean-button{
         background:#212121;
@@ -124,8 +127,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <button class="btn" style="height:40px; border-radius: 0px;">Search</button>
     </div>
 </div>
-<div class="col-md-2 filters text-center" style="background-color: #fff;">
-    <h3><u>FILTERS</u></h3>
+<div class="col-md-2 filters" style="background-color: #F5F5F5; height: 600px; margin-top: 10px; margin-left: 15px; letter-spacing: 2px">
+    <h3><u><b>FILTERS</b></u></h3>
+    <h5><br/><u>BHK</u></h5>
+    <input type="checkbox" value="1BHK"> 1 <br/>
+    <input type="checkbox" value="2BHK"> 2 <br/>
+    <input type="checkbox" value="3BHK"> 3 <br/>
+    <input type="checkbox" value="4BHK"> 4 <br/>
+    <input type="checkbox" value="4pBHK"> Above 4 <br/>
+    <div id="slider-range"></div>
+    <h5><br/><u>PRICE</u></h5>
+          <input type="text" class="js-range-slider" name="my_range" value="price" />
+</div>
 </div>
 <div class="row col-md-10">
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
@@ -196,7 +209,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
-               <div class="overlay0">
+                <div class="overlay0">
                     <div style="color:white;float: left;font-size: 14px;">
                         <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
                         <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
@@ -259,7 +272,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
-               <div class="overlay0">
+                <div class="overlay0">
                     <div style="color:white;float: left;font-size: 14px;">
                         <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
                         <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
@@ -343,7 +356,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
-               <div class="overlay0">
+                <div class="overlay0">
                     <div style="color:white;float: left;font-size: 14px;">
                         <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
                         <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
@@ -360,4 +373,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </a>
 </div>
+<script>
+   var custom_values = [10000, 100000, 1000000, 10000000,100000000];
+    
+    var my_from = custom_values.indexOf(10);
+    var my_to = custom_values.indexOf(10000);
+    
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        grid: false,
+        from: my_from,
+        to: my_to,
+        values: custom_values,
+        prettify_enabled: true,
+        prettify_separator: ","
+    });
+    
+    </script>
 

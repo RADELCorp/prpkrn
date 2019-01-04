@@ -295,7 +295,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="col-md-12 location" style="text-align:center">
         <br/>
-        <h3 style="font-weight:bold"> Our Location </h3>
+        <h3 style="font-weight:bold"><u> Our Location</u> </h3>
         <br/>
     </div>
     <div class="col-md-12">
