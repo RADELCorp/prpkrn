@@ -110,7 +110,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         cursor: pointer;
     }
     .overlay0 .hoverthumbnail{
-        padding: 10px;
+        padding: 25px;
     }
     .overlay0 .amount, .overlay0 .bhk{
         font-size: 15px;
@@ -119,6 +119,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     .rupee-symbol::after{
         content: '\20B9';
         color: green;
+    }
+    .status {
+       text-align: center;
+       font-size: 12px;
+       color: white;
+       font-weight: bold;
+       background: rgba(0, 0, 0, 0.7);
+       height: auto; 
     }
 </style>
 <div class="container" style="padding: 10px; text-align: center">
@@ -143,6 +151,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="row col-md-10">
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;color: black;"><b>Platina Exotica</b></div>
                 </div>
@@ -155,7 +164,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
@@ -164,6 +173,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/12.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
@@ -176,7 +186,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
@@ -185,6 +195,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/13.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
@@ -197,7 +208,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
@@ -206,6 +217,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/14.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
@@ -218,7 +230,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
@@ -227,6 +239,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/15.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
@@ -239,7 +252,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
@@ -248,6 +261,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/16.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
@@ -260,7 +274,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
@@ -269,6 +283,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/17.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
@@ -281,7 +296,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
@@ -290,6 +305,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/13.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
@@ -302,7 +318,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
@@ -311,6 +327,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/14.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
@@ -323,7 +340,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
@@ -332,6 +349,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/15.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
@@ -344,7 +362,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
@@ -353,6 +371,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/16.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
                     <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                 </div>
@@ -365,7 +384,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                             <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                            <div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
