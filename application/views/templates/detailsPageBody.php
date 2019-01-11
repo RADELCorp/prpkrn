@@ -53,6 +53,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
     .box{
         font-family: 'Raleway', sans-serif;
+        text-align: left;
+        background-color:#F5F5F5;
+        margin-top: 2%;
+        color: black;
     }
     h5{
         line-height: 1.75
@@ -164,24 +168,68 @@ defined('BASEPATH') OR exit('No direct script access allowed');
        width:18%;
        padding: 5px;
     }
+    .description{
+        text-align: justify;
+        font-weight: bold;
+        text-align: center;
+    }
+    .description + h6{
+        position: relative;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .property-info{
+        text-align: left;
+        font-weight: bold;
+        margin-left: 3%;
+        text-align: center;
+    }
+    .property-info > div{
+        line-height:1.75  
+    }
+    .amenities{
+        margin-top:6px;
+    }
+    .amenities-title{
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 17px;
+        margin-top: 1px;
+        text-align: center;
+        margin-left: -10%;
+    }
+    .property-name{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .property-name + p{
+        font-weight: lighter;
+        font-size: 12px;
+        margin-top: -1%;
+    }
+    .amenities > .container{
+        height: auto;
+        padding-bottom: 25px;
+    }
+    
 </style>
 
 <div class="container">
     <div class="col-md-12 col-xs-12">
         <div class="col-md-1 col-xs-2">
             <a href="<?php echo base_url('search'); ?>">
-                <button class="btn btn-md" style="width:auto; height:50px;">
+                <button class="btn btn-md">
                     <span class="glyphicon glyphicon-arrow-left"></span>
                 </button>
             </a>
         </div>
         <div class="col-md-9 col-xs-6">
             <div class="row">
-                <p style=" font-weight: bold; font-size: 20px; "> Viemann Complex </p>
-                <p style="font-weight: lighter; font-size: 12px; margin-top: -1%"> Jayanagar 4th block, Bengaluru </p>
+                <p class="property-name" id="property-name"> Viemann Complex </p>
+                <p id="short-location"> Jayanagar 4th block, Bengaluru </p>
             </div>
         </div>
-        <div class="col-md-1 col-xs-3" style="margin-bottom:1%"> 
+        <div class="col-md-1 col-xs-3"> 
             <button class="btn-md btn btn-sm">
                 <span class="glyphicon glyphicon-star-empty"> Save</span>
             </button>
@@ -223,33 +271,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!--LIGHT BOX ENDS HERE-->
 <div class="container">
-    <div class="col-md-12 col-sm-12 col-xs-12 box" style="text-align: left;background-color:#F5F5F5; margin-top: 2%; color: black">
+    <div class="col-md-12 col-sm-12 col-xs-12 box">
         <div class="col-md-12" style="border-bottom:1px solid grey;">
             <div class="col-md-7 col-sm-7 col-xs-11">
-                <h4 style="text-align: justify; font-weight: bold; text-align: center"><u>DESCRIPTION</u> </h4>
-                <h6 style="position: relative; text-align: justify; line-height: 1.5">
+                <h4 class="description"><u>DESCRIPTION</u></h4>
+                <h6 id="property-description">
                     The premium 5, 4 & 3 BHK apartments from Tulip Infratech, Tulip Ace homes have been developed to surpass even the company's other residential projects in terms of excellence. Tulip Infratech, known for delivering high-class services has gone too far in its approach this time and has come up with homes that talk for themselves just like a pole star shines bright among a cluster of million other stars.
-                </h6>
+                </h6>   
             </div>
 
-            <div class="col-md-5 col-sm-5 col-xs-11" style="text-align: center; font-weight: bold;">
-                <h4 style="text-align: left; font-weight: bold; margin-left: 3%; text-align: center "><u>PROPERTY INFORMATION </u></h4>
-                <div class="col-md-6" style="line-height:1.75">
-                    <h6>Price : 1,50,00,000 INR </h6>  
-                    <h6>Status : Available </h6> 
-                    <h6>Year of completion : 2018</h6>
+            <div class="col-md-5 col-sm-5 col-xs-11">
+                <h4 class="property-info"><u>PROPERTY INFORMATION </u></h4>
+                <div class="col-md-6">
+                    <h6 id="property-price">Price : 1,50,00,000 INR </h6>  
+                    <h6 id="property-status">Status : Available </h6> 
+                    <h6 id="property-yoc">Year of completion : 2018</h6>
                 </div>
-                <div class="col-md-6" style="line-height: 1.75">
-                    <h6> Area : 2,800 sq.ft </h6>
-                    <h6> BHK : 4 </h6>
-                    <h6> Furnishing : Full</h6>
+                <div class="col-md-6">
+                    <h6 id="property-area"> Area : 2,800 sq.ft </h6>
+                    <h6 id="property-bhk"> BHK : 4 </h6>
+                    <h6 id="property-furnishing"> Furnishing : Full</h6>
                 </div>
 
             </div>
         </div>
-        <div class="col-md-12" style="margin-top:6px;">
-            <div class="container" style="height: auto;padding-bottom: 25px;">
-                <div style="font-weight: bold;text-decoration: underline;font-size: 17px;margin-top: 1px; text-align: center; margin-left: -10%">AMENITIES</div>
+        <div class="col-md-12 amenities">
+            <div class="container">
+                <div class="amenities-title">AMENITIES</div>
                 <div class="col-md-12" style="padding:0px;">
                     <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
                         <img src="<?php echo base_url('assets/img/cctv.png'); ?>"/><span>CCTV GUIDLINES</span>
