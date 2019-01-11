@@ -97,10 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         width: 100%;
         transition: 0.3s;
     }
-    .overlay1 > div{
-        font-size:16px;
-        text-align: center;
-    }
+
     .container:hover .overlay1 {
         bottom: 55%;
     }
@@ -115,11 +112,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     .overlay0 .hoverthumbnail{
         padding: 25px;
     }
-    .overlay0 > div {
-        color:white;
-        float: left;
-        font-size: 14px;
-    }
     .overlay0 .amount, .overlay0 .bhk{
         font-size: 15px;
         padding: 5px;
@@ -129,18 +121,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         color: green;
     }
     .status {
-        text-align: center;
-        font-size: 12px;
-        color: white;
-        font-weight: bold;
-        background: rgba(0, 0, 0, 0.7);
-        height: auto; 
-    }
-    .fa-map-marker{
-        color: red;
-    }
-    .hoverthumbnail > div {
-        text-align: center;
+       text-align: center;
+       font-size: 12px;
+       color: white;
+       font-weight: bold;
+       background: rgba(0, 0, 0, 0.7);
+       height: auto; 
     }
 </style>
 <div class="container" style="padding: 10px; text-align: center">
@@ -159,33 +145,54 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <input type="checkbox" value="4pBHK"> Above 4 <br/>
     <div id="slider-range"></div>
     <h5><br/><u>PRICE</u></h5>
-    <input type="text" class="js-range-slider" name="my_range" value="price" />
+          <input type="text" class="js-range-slider" name="my_range" value="price" />
 </div>
 </div>
-<div id="search-division" class="row col-md-10">
+<div class="row col-md-10">
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                 <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                 <div class="overlay1">
-                    <div><b>Platina Exotica</b></div>
+                    <div style="font-size:16px;text-align: center;color: black;"><b>Platina Exotica</b></div>
                 </div>
                 <div class="overlay0">
-                    <div style="">
+                    <div style="color:white;float: left;font-size: 14px;">
                         <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
-                        <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker"></i>&nbsp;Jayanagar,Bengaluru</div>
+                        <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
                         <div class="col-xs-12 hoverthumbnail">
-                            <div class="col-xs-3">AREA<br>1080Sqft.</div>
-                            <div class="col-xs-3">BHK<br>4</div>
-                            <div class="col-xs-3">BATH<br>3</div>
-                            <div class="col-xs-3">PARKING<br>YES</div>
+                            <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
+                            <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
+                            <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
+                            <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-
-
+    <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+            <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/12.jpg'); ?>)">
+                <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
+                <div class="overlay1">
+                    <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
+                </div>
+                <div class="overlay0">
+                    <div style="color:white;float: left;font-size: 14px;">
+                        <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                        <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                        <div class="col-xs-12 hoverthumbnail">
+                            <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
+                            <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
+                            <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
+                            <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                            <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
     <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
             <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/13.jpg'); ?>)">
                 <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
@@ -386,11 +393,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
 </div>
 <script>
-    var custom_values = [10000, 100000, 1000000, 10000000, 100000000];
-
+   var custom_values = [10000, 100000, 1000000, 10000000,100000000];
+    
     var my_from = custom_values.indexOf(10);
     var my_to = custom_values.indexOf(10000);
-
+    
     $(".js-range-slider").ionRangeSlider({
         type: "double",
         grid: false,
@@ -400,34 +407,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         prettify_enabled: true,
         prettify_separator: ","
     });
-
-</script>
-<script>
-    $(document).ready(function () {
-        console.log('stage1');
-        var content = '';
-        content += '<a href=""><div class="container feat col-md-4 col-sm-6">';
-        content += '<div class="search-listing-container" style="background-image: url()">';
-        content += '<div class="col-md-3 col-md-offset-9 status">Ready To Move</div>';
-        content += '<div class="overlay1">';
-        content += '<div><b>Platina Exotica</b></div>';
-        content += '</div>';
-        content += '<div class="overlay0">';
-        content += '<div style="">';
-        content += '<div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>';
-        content += '<div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker"></i>&nbsp;Jayanagar,Bengaluru</div>';
-        content += '<div class="col-xs-12 hoverthumbnail">';
-        content += '<div class="col-xs-3">AREA<br>1080Sqft.</div>';
-        content += '<div class="col-xs-3">BHK<br>4</div>'; 
-        content += '<div class="col-xs-3">BATH<br>3</div>';
-        content += '<div class="col-xs-3">PARKING<br>YES</div>';
-        content += '</div>';
-        content += '</div>';
-        content += '</div>';
-        content += '</div>';
-        content += '</div>';
-        content += '</a>';
-        $('#search-division').append(content);
-    });
-</script>
+    
+    </script>
 
