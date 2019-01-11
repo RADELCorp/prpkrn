@@ -112,9 +112,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     .overlay0 .hoverthumbnail{
         padding: 25px;
     }
-    .overlay0 .amount, .overlay0 .bhk{
-        font-size: 15px;
+    .overlay0 .amount{
+        font-size: 17px;
         padding: 5px;
+        font-family: serif;
+    }
+    .overlay0 .bhk{
+        font-size: 12px;
+        padding: 8px;
     }
     .rupee-symbol::after{
         content: '\20B9';
@@ -158,7 +163,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="overlay0">
                     <div style="color:white;float: left;font-size: 14px;">
                         <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
-                        <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                        <div class="col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
                         <div class="col-xs-12 hoverthumbnail">
                             <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
