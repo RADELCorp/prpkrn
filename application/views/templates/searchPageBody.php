@@ -167,7 +167,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="col-xs-12 hoverthumbnail">
                             <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                             <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                            <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
+                            <div id="property-bath" class="col-xs-3" style="text-align:center">BATH<br>3</div>
                             <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
                             <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                         </div>
