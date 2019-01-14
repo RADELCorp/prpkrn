@@ -33,13 +33,26 @@ class Listing extends CI_Model {
     public function getlistings($params) {
         $this->db->from('listings');
         $this->db->where('prop_key="prop_id" OR prop_key="prop_name" OR prop_key="prop_img"');
-        $data[] = '';
         $query = $this->db->get();
         foreach ($query->result() as $row) {
             $key = $row->prop_key;
             $prop_id = $row->prop_id;
             $data[$prop_id][$key] = $row->value;
         }
+        isset($data) ? '' : $data['error'] = 'Listing Not Found';
+        echo json_encode($data);
+    }
+
+    public function get_property_info($id = '000') {
+        $this->db->from('listings');
+        $this->db->where('prop_id', $id);
+        $query = $this->db->get();
+        foreach ($query->result() as $row) {
+            $key = $row->prop_key;
+            $prop_id = $row->prop_id;
+            $data[$prop_id][$key] = $row->value;
+        }
+        isset($data) ? '' : $data['error'] = 'Listing Not Found';
         echo json_encode($data);
     }
 
