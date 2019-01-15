@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         width: 10%;
         height: 100px;
         background-position: center;
-        background-size: cover; 
+        background-size: auto; 
         cursor: pointer;
         margin: 4px;
         display:inline-block;
@@ -148,25 +148,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         color: white;
     }
     .mySlides {
-        height: 450px;
+        height: 400px;
         width: 100%;
         background-position: center;
-        background-size: contain;
+        background-size: ;
         background-repeat: no-repeat;
     }
     .align-ammenities{
         padding:0px;
-        margin-top: 12px;
+        margin-top: 10px;
         font-size: 12px;
     }
     .align-ammenities > img{
        width:18%;
-       padding: 5px;
+       padding: 3px;
     }
     
     .align-ammenities > span{
        width:18%;
-       padding: 5px;
+       padding:  0px;
     }
     .description{
         text-align: justify;
@@ -200,11 +200,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
     .property-name{
         font-weight: bold;
-        font-size: 20px;
+        font-size: 110%;
     }
     .property-name + p{
         font-weight: lighter;
-        font-size: 12px;
+        font-size: 10px;
         margin-top: -1%;
     }
     .amenities > .container{
@@ -215,26 +215,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </style>
 
 <div class="container">
-    <div class="col-md-12 col-xs-12">
-        <div class="col-md-1 col-xs-2">
+    <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="col-md-1 col-xs-2 col-sm-2">
             <a href="<?php echo base_url('search'); ?>">
-                <button class="btn btn-md">
+                <button class="btn btn-md ">
                     <span class="glyphicon glyphicon-arrow-left"></span>
                 </button>
             </a>
         </div>
-        <div class="col-md-9 col-xs-6">
-            <div class="row">
+        <div class="col-md-9 col-xs-6 col-sm-8">
+            <div>
                 <p class="property-name" id="property-name"> Viemann Complex </p>
                 <p id="short-location"> Jayanagar 4th block, Bengaluru </p>
             </div>
         </div>
-        <div class="col-md-1 col-xs-3"> 
+<!--        <div class="col-md-1 col-xs-3"> 
             <button class="btn-md btn btn-sm">
                 <span class="glyphicon glyphicon-star-empty"> Save</span>
             </button>
-        </div>
-        <div class="col-md-1 col-xs-3" > 
+        </div>-->
+        <div class="col-md-1 col-xs-1 col-sm-1" > 
             <button class="btn-md btn btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
                 <span class="glyphicon glyphicon-phone-alt"> Contact</span>
             </button>
@@ -300,7 +300,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="amenities-title">AMENITIES</div>
                 <div class="col-md-12" style="padding:0px;">
                     <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
-                        <img src="<?php echo base_url('assets/img/cctv.png'); ?>"/><span>CCTV GUIDLINES</span>
+                        <img src="<?php echo base_url('assets/img/cctv.png'); ?>"/><span>CCTV</span>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
                         <img src="<?php echo base_url('assets/img/clubhouse.png'); ?>"/><span>CLUB HOUSE</span>
@@ -329,7 +329,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <img src="<?php echo base_url('assets/img/parking.png'); ?>"/><span>PARKING</span>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
-                        <img src="<?php echo base_url('assets/img/sewage.png'); ?>"/><span>WATER SEWAGE</span>
+                        <img src="<?php echo base_url('assets/img/sewage.png'); ?>"/><span>SEWAGE</span>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
                         <img src="<?php echo base_url('assets/img/powerbackup.png'); ?>"/><span>POWER BACKUP</span>
