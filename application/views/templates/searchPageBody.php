@@ -106,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </style>
 <div class="container" style="padding: 10px; text-align: center">
     <div>
-        <input type="text" placeholder="Apartment, Area etc.," style="width: 70%;height: 40px;padding: 5px;">
+        <input type="text" placeholder="Locality, Pincode,etc." style="width: 70%;height: 40px;padding: 5px;">
         <button class="btn" style="height:40px; border-radius: 0px;">Search</button>
     </div>
 </div>

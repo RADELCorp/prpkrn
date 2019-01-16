@@ -70,7 +70,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         width: 10%;
         height: 100px;
         background-position: center;
-        background-size: auto; 
+        background-size: cover;
+        background-repeat: no-repeat;
         cursor: pointer;
         margin: 4px;
         display:inline-block;
@@ -87,11 +88,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     /* Modal Content */
     .modal-content {
-        position: relative;
+        /*        position: relative;*/
         background-color: #fefefe;
         margin: auto;
         padding: 0;
-        width: 90%;
+        /*        width: 90%;*/
         max-width: 1200px;
     }
 
@@ -151,8 +152,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         height: 400px;
         width: 100%;
         background-position: center;
-        background-size: ;
+        background-size: contain;
         background-repeat: no-repeat;
+    }
+    @media(max-width:600px){
+        .mySlides {
+            height: 80vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .lightbox-nav{
+            display:none;
+        }
     }
     .align-ammenities{
         padding:0px;
@@ -160,13 +172,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         font-size: 12px;
     }
     .align-ammenities > img{
-       width:18%;
-       padding: 3px;
+        width:18%;
+        padding: 3px;
     }
-    
+
     .align-ammenities > span{
-       width:18%;
-       padding:  0px;
+        width:18%;
+        padding:  0px;
     }
     .description{
         text-align: justify;
@@ -178,6 +190,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         text-align: justify;
         line-height: 1.5;
     }
+
+
     .property-info{
         text-align: left;
         font-weight: bold;
@@ -211,64 +225,118 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         height: auto;
         padding-bottom: 25px;
     }
-    
+    .serv{
+        font-size: 13px;
+    }
+    .form1but{
+        display:none;
+    }
+    @media(max-width:600px){
+        .form1 {
+            display: none;
+        }
+        .form1but{
+            display:inline-block;
+        }
+    }
+
 </style>
 
 <div class="container">
     <div class="col-md-12 col-xs-12 col-sm-12">
-        <div class="col-md-1 col-xs-2 col-sm-2">
+        <div class="col-md-1 col-xs-3 col-sm-2">
             <a href="<?php echo base_url('search'); ?>">
-                <button class="btn btn-md ">
+                <button class="btn btn-md">
                     <span class="glyphicon glyphicon-arrow-left"></span>
                 </button>
             </a>
         </div>
-        <div class="col-md-9 col-xs-6 col-sm-8">
-            <div>
+        <div class="col-md-10 col-xs-6 col-sm-8">
+            <div class="row">
                 <p class="property-name" id="property-name"> Viemann Complex </p>
                 <p id="short-location"> Jayanagar 4th block, Bengaluru </p>
             </div>
         </div>
-<!--        <div class="col-md-1 col-xs-3"> 
-            <button class="btn-md btn btn-sm">
-                <span class="glyphicon glyphicon-star-empty"> Save</span>
-            </button>
-        </div>-->
-        <div class="col-md-1 col-xs-1 col-sm-1" > 
+        <div class="col-md-1 col-xs-1 col-sm-1 form1but"> 
             <button class="btn-md btn btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
                 <span class="glyphicon glyphicon-phone-alt"> Contact</span>
             </button>
         </div>
     </div>
+
+    <!--NEW LIGHT BOX ADD IT HERE-->
+    <div class="col-md-12 col-xs-12">
+        <div class="modal-content col-md-8" style="padding-top:20px;box-shadow: 0 0;border: 0;">
+            <div class="mySlides" style="background-image:url('<?php echo base_url('assets/img/11.jpg'); ?>');">
+                <div class="numbertext">1 / 4</div>
+            </div>
+            <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');">
+                <div class="numbertext">1 / 4</div>
+            </div>
+            <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');">
+                <div class="numbertext">1 / 4</div>
+            </div>
+            <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');">
+                <div class="numbertext">1 / 4</div>
+            </div>
+            <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/15.jpg'); ?>');">
+                <div class="numbertext">1 / 4</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)" style="background-color:black;">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)" style="background-color:black;">&#10095;</a>
+            <div class="caption-container"></div>
+            <div class="text-center lightbox-nav" style="width:100%;text-align: center">
+                <div class="column" style="background-image: url('<?php echo base_url('assets/img/11.jpg'); ?>');" onclick="currentSlide(1)"></div>
+                <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(2)"></div>
+                <div class="column" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');" onclick="currentSlide(3)"></div>
+                <div class="column" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');" onclick="currentSlide(4)"></div>
+                <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(5)"></div>
+            </div>
+        </div>
+        <div class="col-md-offset-1 col-md-3 form1" style="margin-top: 20px;background-color: #F5F5F5">
+            <!--            <div id="reqForm" class="modal fade" role="dialog">-->
+            <!--                <div class="modal-dialog">
+                                <div class="modal-content" role="document">-->
+            <div class="modal-header">
+                <!--                            <button type="button" class="close" data-dismiss="modal" style="transform: rotate(45deg)">&times;</button>-->
+                <h4 class="modal-title">Get contact info</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group form-inline">
+                    <label for="name">Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="name" class="form-control" id="name" style="width: 100%;">
+                </div>
+                <div class="form-group form-inline">
+                    <label for="email">Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="email" class="form-control" id="email" style="width: 100%;">
+                </div>
+                <div class="form-group form-inline">
+                    <label for="number">Mobile :&nbsp;&nbsp;</label>
+                    <input type="text" class="form-control" id="number" style="width: 100%;">
+                </div>
+                <div class="serv">
+                    <p>Select the services you need :</p>
+                    <label><input type="checkbox" value=""> Painters</label>
+                    <label><input type="checkbox" value=""> Movers</label>
+                    <label><input type="checkbox" value=""> Carpenters</label>
+                </div>
+                <div class="checkbox">
+                    <label ><input checked="" type="checkbox" value="">Accept our Terms & Conditions</label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox">Allow us to call you regarding property details</label>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit & Get Info</button>
+                    <!--                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<!--NEW LIGHT BOX ADD IT HERE-->
-<div class="modal-content" style="padding-top:20px;box-shadow: 0 0;border: 0;">
-    <div class="mySlides" style="background-image:url('<?php echo base_url('assets/img/11.jpg'); ?>');">
-        <div class="numbertext">1 / 4</div>
-    </div>
-    <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');">
-        <div class="numbertext">1 / 4</div>
-    </div>
-    <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');">
-        <div class="numbertext">1 / 4</div>
-    </div>
-    <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');">
-        <div class="numbertext">1 / 4</div>
-    </div>
-    <div class="mySlides" style="background-image: url('<?php echo base_url('assets/img/15.jpg'); ?>');">
-        <div class="numbertext">1 / 4</div>
-    </div>
-    <a class="prev" onclick="plusSlides(-1)" style="background-color:black;">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)" style="background-color:black;">&#10095;</a>
-    <div class="caption-container"></div>
-    <div class="text-center" style="width:100%;text-align: center">
-        <div class="column" style="background-image: url('<?php echo base_url('assets/img/11.jpg'); ?>');" onclick="currentSlide(1)"></div>
-        <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(2)"></div>
-        <div class="column" style="background-image: url('<?php echo base_url('assets/img/13.jpg'); ?>');" onclick="currentSlide(3)"></div>
-        <div class="column" style="background-image: url('<?php echo base_url('assets/img/14.jpg'); ?>');" onclick="currentSlide(4)"></div>
-        <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(5)"></div>
-    </div>
-</div>
+
+
 <!--LIGHT BOX ENDS HERE-->
 <div class="container">
     <div class="col-md-12 col-sm-12 col-xs-12 box">
@@ -318,7 +386,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <img src="<?php echo base_url('assets/img/lift.png'); ?>"/><span>LIFT</span>
                     </div>
                 </div>
-                 <div class="col-md-12" style="padding:0px;">
+                <div class="col-md-12" style="padding:0px;">
                     <div class="col-md-2 col-sm-4 col-xs-6 align-ammenities">
                         <img src="<?php echo base_url('assets/img/swimming.png'); ?>"/><span>SWIMMING</span>
                     </div>
@@ -375,26 +443,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="modal-dialog">
         <div class="modal-content" role="document">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" style="transform: rotate(45deg)">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" style="">&times;</button>
                 <h4 class="modal-title">Fill up this request form</h4>
             </div>
             <div class="modal-body">
                 <div class="form-group form-inline">
-                    <label for="name">Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="name">Name :</label>
                     <input type="name" class="form-control" id="name" style="width: 80%; ">
                 </div>
                 <div class="form-group form-inline">
-                    <label for="email">Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="email">Email :</label>
                     <input type="email" class="form-control" id="email" style="width: 80%;">
                 </div>
                 <div class="form-group form-inline">
-                    <label for="number">Mobile :&nbsp;&nbsp;</label>
+                    <label for="number">Mobile :</label>
                     <input type="text" class="form-control" id="number" style="width: 80%; margin-left: 1%">
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit & Get Info</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <div style="margin-left: 3%">
+                <div class="serv ">
+                    <p>Select the services you need :</p>
+                    <label><input type="checkbox" value=""> Painters</label>
+                    <label><input type="checkbox" value=""> Movers</label>
+                    <label><input type="checkbox" value=""> Carpenters</label>
+                </div>
+                <div class="checkbox">
+                    <label ><input checked="" type="checkbox" value="">Accept our Terms & Conditions</label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox">Allow us to call you regarding property details</label>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit & Get Info</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
@@ -435,7 +518,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </script>
 
 <script type="text/javascript">
-    function reqFormSubmit(){
+    function reqFormSubmit() {
         alert("Successful");
     }
 </script>
