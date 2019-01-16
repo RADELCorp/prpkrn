@@ -474,7 +474,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <script>
         $('.radel-text-input input').change(function () {
-            if ($(this).val() != '') {
+            if ($(this).val() !== '') {
                 $(this).next().addClass('rdl-up');
                 $(this).next().css('top', '-45px');
             } else {
