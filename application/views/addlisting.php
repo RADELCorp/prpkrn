@@ -107,6 +107,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     .upload-image{
         height: 150px;
     }
+    #prop_available_from{
+        padding-top: 10px;
+        width: 35%;
+        text-align: center;
+        height: initial;
+    }
+    .prop_mandatory{
+        color: red;
+        font-weight: bolder;
+    }
+    .addlisting-submit{
+        background-color: rgba(0,0,0,0);
+        border-radius: 30px;
+        border: 1px solid green;
+        letter-spacing:3px;
+    }
+    .addlisting-submit:hover{
+        background-color: rgba(194, 240, 194,1);
+        transition-duration: 0.5s;
+    }
+    .prop-price-buy{
+        display: none;
+    }
 </style>
 <div class="col-md-12">
     <h3 class="addlisting-title">Add new property listing</h3>
@@ -114,15 +137,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="col-md-12 addlisting-subtitles">Property Information</div>
 <div class="col-md-12 sell-rent-switch">
     <label class="radio-inline">
-        <input type="radio" name="rent-sale" checked>For Rent
+        <input type="radio" name="rent-sale" class="for-rent" checked>For Rent
     </label>
     <label class="radio-inline">
-        <input type="radio" name="rent-sale">For Sell
+        <input type="radio" name="rent-sale" class="for-sale">For Sell
     </label>
 </div>
 <div class="col-md-5 col-md-offset-1">
     <div class="radel-text-input dropdown-align">
-        <label>Property Type</label>
+        <label><span class="prop_mandatory">* </span>Property Type</label>
         <select>
             <option disabled selected value> -- select an option -- </option>
             <option value="apt_flat">Apartments/Flats</option>
@@ -133,20 +156,52 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="radel-text-input">
         <input type="text" name="built_area">
-        <label>Built Up Area</label>
+        <label><span class="prop_mandatory">* </span>Built Up Area</label>
     </div>
     <div class="radel-text-input">
         <input type="text" name="total_bedroom">
-        <label>No. of Bedroom</label>
+        <label><span class="prop_mandatory">* </span>No. of Bedroom</label>
     </div>
-    <div class="radel-text-input">
-        <input type="number" name="prop_price">
-        <label>Price Details</label>
+    <div class="prop-price-buy">
+        <div class="radel-text-input">
+            <input type="number" name="prop_price">
+            <label><span class="prop_mandatory">* </span>Price Details</label>
+        </div>
+        <div class="container" style="margin-top:-20px;">
+            <div>
+                <input type="checkbox" id="store_room">
+                <label for="store_room">Negotiable</label>
+            </div>
+            <div>
+                <input type="checkbox" id="store_room">
+                <label for="store_room">Including maintainance charges</label>
+            </div>
+        </div>
+    </div>
+    <div class="prop-price-rent">
+        <div class="radel-text-input">
+            <div class="col-md-6">
+                <input type="number">
+                <label><span class="prop_mandatory">* </span>monthly rent</label></div>
+            <div class="col-md-6">
+                <input type="number">
+                <label><span class="prop_mandatory">* </span>security deposit</label></div>
+        </div>
+        <div class="col-md-12" style="margin-top:-20px;">
+            <div>
+                <input type="checkbox" id="store_room">
+                <label for="store_room">Negotiable</label>
+            </div>
+            <div>
+                <input type="checkbox" id="store_room">
+                <label for="store_room">Including maintainance charges</label>
+            </div>
+        </div>
     </div>
 </div>
 <div class="col-md-5">
     <div class="radel-text-input dropdown-align">
-        <label>BHK Type</label>
+        <label><span class="prop_mandatory">* </span>BHK Type</label>
         <select>
             <option disabled selected value> -- select an option -- </option>
             <option value="1rk">1RK</option>
@@ -158,44 +213,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="radel-text-input">
         <input type="text" name="carpet_area">
-        <label>Carpet Area</label>
+        <label><span class="prop_mandatory">* </span>Carpet Area</label>
     </div>
     <div class="radel-text-input">
         <input type="text" name="total_balcony">
-        <label>No. of Balcony</label>
+        <label><span class="prop_mandatory">* </span>No. of Balcony</label>
     </div>
-    <div class="radel-text-input">
-        <input type="text" name="prop_status">
-        <label>Status</label>
+    <div>
+        <span><span class="prop_mandatory">* </span>Available From : </span><input id="prop_available_from" type="date" name="bday">
     </div>
 </div>
 <div class="col-md-12 addlisting-subtitles">Address Details</div>
 <div class="col-md-5 col-md-offset-1">
     <div class="radel-text-input">
         <input type="text" name="prop_name">
-        <label>Building Name / No.</label>
+        <label><span class="prop_mandatory">* </span>Building Name / No.</label>
     </div>
     <div class="radel-text-input">
         <input type="text" name="addr_ln1">
-        <label>Address</label>
+        <label><span class="prop_mandatory">* </span>Address</label>
     </div>
     <div class="radel-text-input">
         <input type="number" name="prop_pincode">
-        <label>Pincode</label>
+        <label><span class="prop_mandatory">* </span>Pincode</label>
     </div>
 </div>
 <div class="col-md-5">
     <div class="radel-text-input">
         <input type="text" name="prop_locality">
-        <label>Locality</label>
+        <label><span class="prop_mandatory">* </span>Locality</label>
     </div>
     <div class="radel-text-input">
         <input type="text" name="prop_city">
-        <label>City</label>
+        <label><span class="prop_mandatory">* </span>City</label>
     </div>
     <div class="radel-text-input">
         <input type="text" name="prop_state">
-        <label>State</label>
+        <label><span class="prop_mandatory">* </span>State</label>
     </div>
 
 
@@ -328,21 +382,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="col-md-12 addlisting-subtitles">Additional Information</div>
 <div class="col-md-3 col-md-offset-1">
     <p class="additional-info-subtitile">Preferred Tennats:</p>
-    <div>
-        <input type="checkbox" id="family">
-        <label for="family">Family</label>
-    </div>
-    <div>
-        <input type="checkbox" id="bachelor">
-        <label for="bachelor">Bachelor</label>
-    </div>
-    <div>
-        <input type="checkbox" id="commercial">
-        <label for="commercial">Commercial</label>
+    <div class="col-md-12">
+        <div>
+            <input type="checkbox" id="family">
+            <label for="family">Family</label>
+        </div>
+        <div>
+            <input type="checkbox" id="bachelor">
+            <label for="bachelor">Bachelor</label>
+        </div>
+        <div>
+            <input type="checkbox" id="commercial">
+            <label for="commercial">Commercial</label>
+        </div>
     </div>
 </div>
 <div class="col-md-4">
-    <p class="additional-info-subtitile">Facing:</p>
+    <p class="additional-info-subtitile"><span class="prop_mandatory">* </span>Facing:</p>
     <div class="col-md-4">
         <input type="radio" id="prop_north" name="prop_facing">
         <label for="prop_north">North</label><br>
@@ -365,7 +421,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 <div class="col-md-4">
-    <p class="additional-info-subtitile">Property Feature</p>
+    <p class="additional-info-subtitile"><span class="prop_mandatory">* </span>Property Feature</p>
     <div class="col-md-6">
         <input type="radio" id="prop_unfurnished" name="prop_furnished">
         <label for="prop_unfurnished">Unfurnished</label><br>
@@ -377,34 +433,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <div class="col-md-11 col-md-offset-1">
     <div class="col-md-3 extras-align" style="padding-left:0px;">
-        <p class="additional-info-subtitile">Extras:</p>
-        <div>
-            <input type="checkbox" id="store_room">
-            <label for="store_room">Has store room.</label>
-        </div>
-        <div>
-            <input type="checkbox" id="prayer_room">
-            <label for="prayer_room">Has prayer room</label>
-        </div>
-        <div>
-            <input type="checkbox" id="power_backup">
-            <label for="power_backup">Has power backup</label>
+        <p class="additional-info-subtitile"><span class="prop_mandatory">* </span>Extras:</p>
+        <div class="col-md-12">
+            <div>
+                <input type="checkbox" id="store_room">
+                <label for="store_room">Has store room.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="prayer_room">
+                <label for="prayer_room">Has prayer room</label>
+            </div>
+            <div>
+                <input type="checkbox" id="power_backup">
+                <label for="power_backup">Has power backup</label>
+            </div>
         </div>
     </div>
     <div class="col-md-3 floor-align">
         <div class="radel-text-input">
             <input type="text" name="prop_floorno">
-            <label>Floor no.</label>
+            <label><span class="prop_mandatory">* </span>Floor no.</label>
             <div class="radel-text-input">
                 <input type="text" name="prop_totalfloor">
-                <label>Total Floors</label>
+                <label><span class="prop_mandatory">* </span>Total Floors</label>
             </div>
         </div>
     </div>
-    <div class="col-md-4 col-md-offset-4 upload-image">
+    <div class="col-md-8 col-md-offset-4 upload-image">
         <div>
-            <label class="addlisting-subtitles" for="file">Choose Images to Upload</label>
+            <span class="prop_mandatory">* </span><label class="addlisting-subtitles" for="file">Choose Images to Upload</label>
             <input type="file" id="file" name="file" multiple>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-md-offset-10" style="height:70px;">
+            <button type="button" class="addlisting-submit btn btn-default btn-lg">Submit</button>
         </div>
     </div>
     <script>
@@ -419,5 +482,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         });
         $('.radel-text-input label').click(function () {
             $(this).prev().focus();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".for-rent").click(function () {
+                $(".prop-price-buy").hide();
+                $(".prop-price-rent").show();
+            });
+            $(".for-sale").click(function () {
+                $(".prop-price-rent").hide();
+                $(".prop-price-buy").show();
+            });
         });
     </script>
