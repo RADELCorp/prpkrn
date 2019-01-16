@@ -182,10 +182,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="radel-text-input">
             <div class="col-md-6">
                 <input type="number">
-                <label><span class="prop_mandatory">* </span>monthly rent</label></div>
+                <label><span class="prop_mandatory">* </span>monthly rent</label>
+            </div>
             <div class="col-md-6">
                 <input type="number">
-                <label><span class="prop_mandatory">* </span>security deposit</label></div>
+                <label><span class="prop_mandatory">* </span>security deposit</label>
+            </div>
         </div>
         <div class="col-md-12" style="margin-top:-20px;">
             <div>
