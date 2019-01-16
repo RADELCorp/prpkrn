@@ -251,7 +251,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </button>
             </a>
         </div>
-        <div class="col-md-10 col-xs-6 col-sm-8">
+        <div class="col-md-9 col-xs-6 col-sm-8">
             <div class="row">
                 <p class="property-name" id="property-name"> Viemann Complex </p>
                 <p id="short-location"> Jayanagar 4th block, Bengaluru </p>
@@ -259,7 +259,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="col-md-1 col-xs-1 col-sm-1 form1but"> 
             <button class="btn-md btn btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
-                <span class="glyphicon glyphicon-phone-alt"> Contact</span>
+                <span class="glyphicon glyphicon-phone-alt"></span>
+            </button>
+        </div>
+        <div class="col-md-1 col-xs-1 col-sm-1" style="margin-left: 2%">
+            <button class="btn-md btn btn-inf btn-sm">
+                <span class="glyphicon glyphicon-share"></span>
             </button>
         </div>
     </div>
@@ -303,15 +308,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <div class="modal-body">
                 <div class="form-group form-inline">
-                    <label for="name">Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="name">Name : </label>
                     <input type="name" class="form-control" id="name" style="width: 100%;">
                 </div>
                 <div class="form-group form-inline">
-                    <label for="email">Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="email">Email : </label>
                     <input type="email" class="form-control" id="email" style="width: 100%;">
                 </div>
                 <div class="form-group form-inline">
-                    <label for="number">Mobile :&nbsp;&nbsp;</label>
+                    <label for="number">Mobile </label>
                     <input type="text" class="form-control" id="number" style="width: 100%;">
                 </div>
                 <div class="serv">
@@ -320,11 +325,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <label><input type="checkbox" value=""> Movers</label>
                     <label><input type="checkbox" value=""> Carpenters</label>
                 </div>
-                <div class="checkbox">
-                    <label ><input checked="" type="checkbox" value="">Accept our Terms & Conditions</label>
+                <div class="checkbox" style="font-size: 12px">
+                    <label><input type="checkbox" value="">Accept our Terms & Conditions</label>
                 </div>
 
-                <div class="checkbox">
+                <div class="checkbox" style="font-size: 12px">
                     <label><input type="checkbox">Allow us to call you regarding property details</label>
                 </div>
                 <div class="modal-footer">
@@ -460,8 +465,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <input type="text" class="form-control" id="number" style="width: 80%; margin-left: 1%">
                 </div>
             </div>
-            <div style="margin-left: 3%">
-                <div class="serv ">
+            <div style="margin-left: 3%;">
+                <div class="serv " style="text-align: center">
                     <p>Select the services you need :</p>
                     <label><input type="checkbox" value=""> Painters</label>
                     <label><input type="checkbox" value=""> Movers</label>
