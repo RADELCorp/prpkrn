@@ -239,7 +239,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             display:inline-block;
         }
     }
-
+    hr{
+        border : 1px solid black;
+    }
 </style>
 
 <div class="container">
@@ -346,21 +348,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="container">
     <div class="col-md-12 col-sm-12 col-xs-12 box">
         <div class="col-md-12" style="border-bottom:1px solid grey;">
-            <div class="col-md-7 col-sm-7 col-xs-11">
+            <div class="">
                 <h4 class="description"><u>DESCRIPTION</u></h4>
                 <h6 id="property-description">
                     The premium 5, 4 & 3 BHK apartments from Tulip Infratech, Tulip Ace homes have been developed to surpass even the company's other residential projects in terms of excellence. Tulip Infratech, known for delivering high-class services has gone too far in its approach this time and has come up with homes that talk for themselves just like a pole star shines bright among a cluster of million other stars.
                 </h6>   
+                <hr>
             </div>
-
-            <div class="col-md-5 col-sm-5 col-xs-11">
+            <div class="">
                 <h4 class="property-info"><u>PROPERTY INFORMATION </u></h4>
-                <div class="col-md-6">
+                <div class="col-md-6" style="text-align: center">
                     <h6 id="property-price">Price : 1,50,00,000 INR </h6>  
                     <h6 id="property-status">Status : Available </h6> 
                     <h6 id="property-yoc">Year of completion : 2018</h6>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" style="text-align: center">
                     <h6 id="property-area"> Area : 2,800 sq.ft </h6>
                     <h6 id="property-bhk"> BHK : 4 </h6>
                     <h6 id="property-furnishing"> Furnishing : Full</h6>
