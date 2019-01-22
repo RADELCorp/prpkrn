@@ -190,12 +190,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         text-align: justify;
         line-height: 1.5;
     }
-
-
     .property-info{
         text-align: left;
         font-weight: bold;
-        margin-left: 3%;
+        margin-left: 3%;    
         text-align: center;
     }
     .property-info > div{
@@ -239,7 +237,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             display:inline-block;
         }
     }
-    hr{
+    .line{
         border : 1px solid black;
     }
 </style>
@@ -248,7 +246,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-md-12 col-xs-12 col-sm-12">
         <div class="col-md-1 col-xs-3 col-sm-2">
             <a href="<?php echo base_url('search'); ?>">
-                <button class="btn btn-md">
+                <button class="btn btn-primary btn-md">
                     <span class="glyphicon glyphicon-arrow-left"></span>
                 </button>
             </a>
@@ -260,12 +258,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
         <div class="col-md-1 col-xs-1 col-sm-1 form1but"> 
-            <button class="btn-md btn btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
+            <button class="btn-md btn btn-primary btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
                 <span class="glyphicon glyphicon-phone-alt"></span>
             </button>
         </div>
         <div class="col-md-1 col-xs-1 col-sm-1" style="margin-left: 2%">
-            <button class="btn-md btn btn-inf btn-sm">
+            <button class="btn-md btn btn-primary btn-inf btn-sm">
                 <span class="glyphicon glyphicon-share"></span>
             </button>
         </div>
@@ -318,13 +316,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <input type="email" class="form-control" id="email" style="width: 100%;">
                 </div>
                 <div class="form-group form-inline">
-                    <label for="number">Mobile </label>
+                    <label for="number">Mobile :</label>
                     <input type="text" class="form-control" id="number" style="width: 100%;">
                 </div>
-                <div class="serv">
+                <div class="serv container">
                     <p>Select the services you need :</p>
-                    <label><input type="checkbox" value=""> Painters</label>
-                    <label><input type="checkbox" value=""> Movers</label>
+                    <label class="chckbx"><input type="checkbox" value=""> Painters</label> &nbsp
+                    <label><input type="checkbox" value=""> Movers</label> <br/>
                     <label><input type="checkbox" value=""> Carpenters</label>
                 </div>
                 <div class="checkbox" style="font-size: 12px">
@@ -335,7 +333,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <label><input type="checkbox">Allow us to call you regarding property details</label>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit & Get Info</button>
+                    <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit</button>
                     <!--                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
                 </div>
             </div>
@@ -353,7 +351,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <h6 id="property-description">
                     The premium 5, 4 & 3 BHK apartments from Tulip Infratech, Tulip Ace homes have been developed to surpass even the company's other residential projects in terms of excellence. Tulip Infratech, known for delivering high-class services has gone too far in its approach this time and has come up with homes that talk for themselves just like a pole star shines bright among a cluster of million other stars.
                 </h6>   
-                <hr>
+                <hr class="line">
             </div>
             <div class="">
                 <h4 class="property-info"><u>PROPERTY INFORMATION </u></h4>
