@@ -190,10 +190,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         text-align: justify;
         line-height: 1.5;
     }
+
+
     .property-info{
         text-align: left;
         font-weight: bold;
-        margin-left: 3%;    
+        margin-left: 3%;
         text-align: center;
     }
     .property-info > div{
@@ -237,16 +239,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             display:inline-block;
         }
     }
-    .line{
-        border : 1px solid black;
-    }
+
 </style>
 
 <div class="container">
     <div class="col-md-12 col-xs-12 col-sm-12">
         <div class="col-md-1 col-xs-3 col-sm-2">
             <a href="<?php echo base_url('search'); ?>">
-                <button class="btn btn-primary btn-md">
+                <button class="btn btn-md">
                     <span class="glyphicon glyphicon-arrow-left"></span>
                 </button>
             </a>
@@ -258,12 +258,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
         <div class="col-md-1 col-xs-1 col-sm-1 form1but"> 
-            <button class="btn-md btn btn-primary btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
+            <button class="btn-md btn btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
                 <span class="glyphicon glyphicon-phone-alt"></span>
             </button>
         </div>
         <div class="col-md-1 col-xs-1 col-sm-1" style="margin-left: 2%">
-            <button class="btn-md btn btn-primary btn-inf btn-sm">
+            <button class="btn-md btn btn-inf btn-sm">
                 <span class="glyphicon glyphicon-share"></span>
             </button>
         </div>
@@ -271,7 +271,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <!--NEW LIGHT BOX ADD IT HERE-->
     <div class="col-md-12 col-xs-12">
-        <div class="modal-content col-md-8" style="padding-top:20px;box-shadow: 0 0;border: 0;">
+        <div class="modal-content col-md-12" style="padding-top:20px;box-shadow: 0 0;border: 0;">
             <div class="mySlides" style="background-image:url('<?php echo base_url('assets/img/11.jpg'); ?>');">
                 <div class="numbertext">1 / 4</div>
             </div>
@@ -298,46 +298,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(5)"></div>
             </div>
         </div>
-        <div class="col-md-offset-1 col-md-3 form1" style="margin-top: 20px;background-color: #F5F5F5">
-            <!--            <div id="reqForm" class="modal fade" role="dialog">-->
-            <!--                <div class="modal-dialog">
-                                <div class="modal-content" role="document">-->
-            <div class="modal-header">
-                <!--                            <button type="button" class="close" data-dismiss="modal" style="transform: rotate(45deg)">&times;</button>-->
-                <h4 class="modal-title">Get contact info</h4>
-            </div>
-            <div class="modal-body">
-                <div class="form-group form-inline">
-                    <label for="name">Name : </label>
-                    <input type="name" class="form-control" id="name" style="width: 100%;">
-                </div>
-                <div class="form-group form-inline">
-                    <label for="email">Email : </label>
-                    <input type="email" class="form-control" id="email" style="width: 100%;">
-                </div>
-                <div class="form-group form-inline">
-                    <label for="number">Mobile :</label>
-                    <input type="text" class="form-control" id="number" style="width: 100%;">
-                </div>
-                <div class="serv container">
-                    <p>Select the services you need :</p>
-                    <label class="chckbx"><input type="checkbox" value=""> Painters</label> &nbsp
-                    <label><input type="checkbox" value=""> Movers</label> <br/>
-                    <label><input type="checkbox" value=""> Carpenters</label>
-                </div>
-                <div class="checkbox" style="font-size: 12px">
-                    <label><input type="checkbox" value="">Accept our Terms & Conditions</label>
-                </div>
-
-                <div class="checkbox" style="font-size: 12px">
-                    <label><input type="checkbox">Allow us to call you regarding property details</label>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit</button>
-                    <!--                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -346,25 +306,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="container">
     <div class="col-md-12 col-sm-12 col-xs-12 box">
         <div class="col-md-12" style="border-bottom:1px solid grey;">
-            <div class="">
+            <div class="col-md-7 col-sm-7 col-xs-11">
                 <h4 class="description"><u>DESCRIPTION</u></h4>
                 <h6 id="property-description">
                     The premium 5, 4 & 3 BHK apartments from Tulip Infratech, Tulip Ace homes have been developed to surpass even the company's other residential projects in terms of excellence. Tulip Infratech, known for delivering high-class services has gone too far in its approach this time and has come up with homes that talk for themselves just like a pole star shines bright among a cluster of million other stars.
                 </h6>   
-                <hr class="line">
             </div>
-            <div class="">
+
+            <div class="col-md-5 col-sm-5 col-xs-11">
                 <h4 class="property-info"><u>PROPERTY INFORMATION </u></h4>
-                <div class="col-md-6" style="text-align: center">
-                    <h6 id="property-price">Price : 1,50,00,000 INR </h6>  
-                    <h6 id="property-status">Status : Available </h6> 
-                    <h6 id="property-yoc">Year of completion : 2018</h6>
+                <div class="col-md-12" style="text-align: center;">
+                    <div class="col-md-6">
+                        <h5 id="property-price"><b><u>Price Range</u></b></h5>  
+                        <h6>1 BHK : 40L - 70L</h6>
+                        <h6>2 BHK : 70L - 95L</h6>
+                        <h6>3 BHK : 1.2Cr - 1.6Cr.</h6>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 id="property-status">Status : Available </h5> 
+                        <h5 id="property-status">Year of completion : 2018</h5> 
+                    </div>
                 </div>
-                <div class="col-md-6" style="text-align: center">
-                    <h6 id="property-area"> Area : 2,800 sq.ft </h6>
-                    <h6 id="property-bhk"> BHK : 4 </h6>
-                    <h6 id="property-furnishing"> Furnishing : Full</h6>
-                </div>
+                <!--                <div class="col-md-6">
+                                    <h6 id="property-area"> Area : 2,800 sq.ft </h6>
+                                    <h6 id="property-bhk"> BHK : 4 </h6>
+                                    <h6 id="property-furnishing"> Furnishing : Full</h6>
+                                </div>-->
 
             </div>
         </div>
@@ -444,50 +411,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div id="reqForm" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content" role="document">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" style="">&times;</button>
-                <h4 class="modal-title">Fill up this request form</h4>
-            </div>
-            <div class="modal-body">
-                <div class="form-group form-inline">
-                    <label for="name">Name :</label>
-                    <input type="name" class="form-control" id="name" style="width: 80%; ">
-                </div>
-                <div class="form-group form-inline">
-                    <label for="email">Email :</label>
-                    <input type="email" class="form-control" id="email" style="width: 80%;">
-                </div>
-                <div class="form-group form-inline">
-                    <label for="number">Mobile :</label>
-                    <input type="text" class="form-control" id="number" style="width: 80%; margin-left: 1%">
-                </div>
-            </div>
-            <div style="margin-left: 3%;">
-                <div class="serv " style="text-align: center">
-                    <p>Select the services you need :</p>
-                    <label><input type="checkbox" value=""> Painters</label>
-                    <label><input type="checkbox" value=""> Movers</label>
-                    <label><input type="checkbox" value=""> Carpenters</label>
-                </div>
-                <div class="checkbox">
-                    <label ><input checked="" type="checkbox" value="">Accept our Terms & Conditions</label>
-                </div>
 
-                <div class="checkbox">
-                    <label><input type="checkbox">Allow us to call you regarding property details</label>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit & Get Info</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal Ends -->
 
 <script type="text/javascript">
     $(".category-wrapper").owlCarousel({

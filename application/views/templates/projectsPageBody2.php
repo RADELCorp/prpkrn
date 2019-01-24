@@ -28,12 +28,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         font-family: 'Raleway', sans-serif;
         background-color: whitesmoke;
     }
-
     .feat{
         margin-bottom: 15px;
         background-repeat: no-repeat;
         background-size: cover;
-        height:250px;
+        height:300px;
         padding: 10px;
     }
     .placeholder-control::placeholder {
@@ -51,9 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         height: 15%;
         transition: .3s;
     }
-
-    .container:hover .overlay0 {
-        height: 55%;
+    .feat:hover .overlay0 {
+        height: 35%;
     }
     .overlay1 {
         position: absolute;
@@ -66,9 +64,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         width: 100%;
         transition: 0.3s;
     }
-
-    .container:hover .overlay1 {
-        bottom: 55%;
+    .feat:hover .overlay1 {
+        bottom: 35%;
     }
     .search-listing-container{
         width: 100%;
@@ -104,29 +101,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         height: auto; 
     }
 </style>
-<div class="container" style="padding: 10px; text-align: center">
-    <div>
+<div class="container">
+    <h2 style="text-align:center">Our Projects</h2>
+    <div class="" style="padding: 10px; text-align: center">
         <input type="text" placeholder="Locality, Pincode,etc." style="width: 70%;height: 40px;padding: 5px;">
         <button class="btn" style="height:40px; border-radius: 0px;">Search</button>
     </div>
-</div>
-<div class="col-md-12 col-xs-12">
-    <div class="col-md-2 col-xs-11 filters" style="background-color: #F5F5F5; height: 250px; margin-top: 10px; margin-left: 15px; letter-spacing: 2px">
-        <h3><u><b>FILTERS</b></u></h3>
-        <h5><br/><u>BHK</u></h5>
-        <div class="col-md-1 col-xs-3"> <input type="checkbox" value="1BHK"> 1 <br/></div>
-        <div class="col-md-1 col-xs-3"><input type="checkbox" value="2BHK"> 2 <br/></div>
-        <div class="col-md-1 col-xs-3"><input type="checkbox" value="3BHK"> 3 <br/></div>
-        <div class="col-md-1 col-xs-3"><input type="checkbox" value="4BHK"> 4<br/></div>
-        <div class="col-md-1 col-xs-3"><input type="checkbox" value="4pBHK"> 4+<br/></div>
-        <div id="slider-range"></div>
-        <div>
-            <p style="padding-top: 40px"><u><br/>PRICE</u> </p>
-            <input type="text" class="js-range-slider" name="my_range" value="price" />
-        </div>
-    </div>
-    <div class="col-md-9 col-xs-12">
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-xs-3">
+    <div class="col-md-12 col-xs-12">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-xs-3">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -134,21 +117,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr - 8 Cr.</div>
                             <div class="col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div id="property-bath" class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                            <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/12.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -156,21 +136,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span>1.5 Cr - 8 Cr.</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                            <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b> </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/13.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -178,21 +155,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr - 8 Cr.</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                            <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b> </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/14.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -200,21 +174,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr - 8 Cr.</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                            <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b> </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/15.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -222,21 +193,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr - 8 Cr.</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                            <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b> </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/16.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -244,21 +212,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr - 8 Cr.</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                            <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b> </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/17.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -266,21 +231,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr - 8 Cr.</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                            <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b> </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/13.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -288,21 +250,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span>1.5 Cr - 8 Cr.</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                           <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b> </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/14.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -310,21 +269,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span>1.5 Cr - 8 Cr.</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                            <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b> </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/15.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -334,19 +290,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div style="color:white;float: left;font-size: 14px;">
                             <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                            <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b> </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
+        <a href="<?php echo base_url('Projectdetails'); ?>">
+            <div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/16.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
@@ -356,12 +309,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div style="color:white;float: left;font-size: 14px;">
                             <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-12 hoverthumbnail">
-                                <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
-                                <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
-                                <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
+                            <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
+                                <p><b> Brigade Private Limited </b> </p>
                             </div>
                         </div>
                     </div>
@@ -370,6 +319,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </a>
     </div>
 </div>
+
 <script>
     var custom_values = [10000, 100000, 1000000, 10000000, 100000000];
 
