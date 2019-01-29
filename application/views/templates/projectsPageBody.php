@@ -50,43 +50,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         border: 1px solid white;
         height: 300px;   //Darshan's code
     }
-    #custom-search-input{
-        padding: 3px;
-        border: solid 1px #E4E4E4;
-        border-radius: 6px;
-        background-color: #fff;
-    }
-
-    #custom-search-input input{
-        border: 0;
-        box-shadow: none;
-    }
-
-    #custom-search-input button{
-        margin: 2px 0 0 0;
-        background: none;
-        box-shadow: none;
-        border: 0;
-        color: #666666;
-        padding: 0 8px 0 10px;
-        border-left: solid 1px #ccc;
-    }
-
-    #custom-search-input button:hover{
-        border: 0;
-        box-shadow: none;
-        border-left: solid 1px #ccc;
-    }
-
-    #custom-search-input .glyphicon-search{
-        font-size: 23px;
-    }
     .placeholder-control::placeholder { 
         color: grey;
         font-size: 13px;
     }
 </style>
-
+    
 
 <div class="container">
     <h2 style="text-align:center">Our Projects</h2>

@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
     .column {
-        width: 10%;
+        width: 15%;
         height: 100px;
         background-position: center;
         background-size: cover;
@@ -157,7 +157,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
     @media(max-width:600px){
         .mySlides {
-            height: 80vh;
+            height: 40vh;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -240,6 +240,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     .line{
         border : 1px solid black;
     }
+
 </style>
 
 <div class="container">
@@ -259,7 +260,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="col-md-1 col-xs-1 col-sm-1 form1but"> 
             <button class="btn-md btn btn-primary btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
-                <span class="glyphicon glyphicon-phone-alt"></span>
+                <span class="glyphicon glyphicon-earphone"></span>
             </button>
         </div>
         <div class="col-md-1 col-xs-1 col-sm-1" style="margin-left: 2%">
@@ -326,14 +327,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <label><input type="checkbox" value=""> Carpenters</label>
                 </div>
                 <div class="checkbox" style="font-size: 12px">
-                    <label><input type="checkbox" value="">Accept our Terms & Conditions</label>
+                    <label><input type="checkbox" id="tandc" value="">Accept our Terms & Conditions</label>
                 </div>
 
                 <div class="checkbox" style="font-size: 12px">
                     <label><input type="checkbox">Allow us to call you regarding property details</label>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit</button>
+                    <input type="button" id="formbtn" onclick="return reqFormSubmit()" value="Submit" class="btn btn-primary" disabled="">
+                    <!--                    <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit</button>-->
                     <!--                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
                 </div>
             </div>
@@ -343,7 +345,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 <!--LIGHT BOX ENDS HERE-->
-<div class="container">
+<div class="container ">
     <div class="col-md-12 col-sm-12 col-xs-12 box">
         <div class="col-md-12" style="border-bottom:1px solid grey;">
             <div class="">
@@ -365,7 +367,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <h6 id="property-bhk"> BHK : 4 </h6>
                     <h6 id="property-furnishing"> Furnishing : Full</h6>
                 </div>
-
             </div>
         </div>
         <div class="col-md-12 amenities">
