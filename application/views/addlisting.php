@@ -401,7 +401,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <div class="col-md-4">
     <p class="additional-info-subtitile"><span class="prop_mandatory">* </span>Facing:</p>
-    <div class="col-md-4">
+    <div class="col-md-4 col-xs-4">
         <input type="radio" id="prop_north" name="prop_facing">
         <label for="prop_north">North</label><br>
         <input type="radio" id="prop_south" name="prop_facing">
@@ -411,7 +411,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <input type="radio" id="prop_west" name="prop_facing">
         <label for="prop_west">West</label>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 col-xs-8">
         <input type="radio" id="prop_northeast" name="prop_facing">
         <label for="prop_northeast">North-East</label><br>
         <input type="radio" id="prop_northwest" name="prop_facing">
@@ -435,7 +435,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <div class="col-md-11 col-md-offset-1">
     <div class="col-md-3 extras-align" style="padding-left:0px;">
-        <p class="additional-info-subtitile"><span class="prop_mandatory">* </span>Extras:</p>
+        <p class="additional-info-subtitile">Extras:</p>
         <div class="col-md-12">
             <div>
                 <input type="checkbox" id="store_room">
@@ -454,10 +454,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-md-3 floor-align">
         <div class="radel-text-input">
             <input type="text" name="prop_floorno">
-            <label><span class="prop_mandatory">* </span>Floor no.</label>
+            <label>Floor no.</label>
             <div class="radel-text-input">
                 <input type="text" name="prop_totalfloor">
-                <label><span class="prop_mandatory">* </span>Total Floors</label>
+                <label>Total Floors</label>
             </div>
         </div>
     </div>

@@ -24,6 +24,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     .footertext > .row {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+    footer-terms-consditions{
+        
+    }
 </style>
 
 <div class="footertext">
@@ -33,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p class="footertitle"><b>EXPLORE</b></p>
                 <hr style="margin-top:1%" width="45px;" align="left">
                 <div class="footerSubHeadings">
-                    <p>HOME</p>
+<!--                    <p>HOME</p>-->
                     <p>ABOUT US</p>
                     <p>CAREER</p>
                     <p>BLOGS</p>
@@ -73,6 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <hr style="margin-top:1%" width="95%;">
             <div class="col-xs-12" style="">
                 <p class="footertitle text-center">2018 &copy; Propkorner</p>
+                <h5  class="footer-terms-consditions text-center"><a href="#" style="cursor: pointer;color: grey">*Terms and Conditions*</a></h5>
             </div>
         </div>
     </div>        
