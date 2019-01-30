@@ -288,7 +288,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 4 Cr - 6 Cr</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
                             <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
                                 <p><b> Brigade Private Limited </b> </p>
@@ -307,7 +307,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1,50,00,000</div>
+                            <div class="col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr - 4 Cr</div>
                             <div class="col-xs-6 bhk text-right"><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
                             <div class="col-xs-12 hoverthumbnail" style="text-align:center;">
                                 <p><b> Brigade Private Limited </b> </p>

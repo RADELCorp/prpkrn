@@ -6,6 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     body {
         font-family: 'Raleway', sans-serif;
         background-color: white;
+        overflow-x: hidden;
     }
     .social { color:#ffffff;
     }
@@ -64,7 +65,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     .row > .column {
         padding: 0 8px;
     }
-
 
     .column {
         width: 15%;
@@ -223,9 +223,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         height: auto;
         padding-bottom: 25px;
     }
-    .serv{
-        font-size: 13px;
-    }
+    /*    .serv{
+            font-size: 13px;
+        }*/
     .form1but{
         display:none;
     }
@@ -240,7 +240,62 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     .line{
         border : 1px solid black;
     }
-
+    .blockbut{
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #2e6da4;
+        padding: 14px 28px;
+        font-size: 16px;
+        color: whitesmoke;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 4px;
+    }
+    .fil{
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    .fil input {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #e0e0e0;
+    }   
+    .fil:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    .fil input:checked ~ .checkmark {
+        background-color: #2196F3;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    .fil input:checked ~ .checkmark:after {
+        display: block;
+    }
+    .fil .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+    }
 </style>
 
 <div class="container">
@@ -257,11 +312,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p class="property-name" id="property-name"> Viemann Complex </p>
                 <p id="short-location"> Jayanagar 4th block, Bengaluru </p>
             </div>
-        </div>
-        <div class="col-md-1 col-xs-1 col-sm-1 form1but"> 
-            <button class="btn-md btn btn-primary btn-inf btn-sm" data-toggle="modal" data-target="#reqForm">
-                <span class="glyphicon glyphicon-earphone"></span>
-            </button>
         </div>
         <div class="col-md-1 col-xs-1 col-sm-1" style="margin-left: 2%">
             <button class="btn-md btn btn-primary btn-inf btn-sm">
@@ -299,6 +349,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="column" style="background-image: url('<?php echo base_url('assets/img/12.jpg'); ?>');" onclick="currentSlide(5)"></div>
             </div>
         </div>
+        <div class="col-xs-12 form1but"> 
+            <button class="button blockbut" data-toggle="modal" data-target="#reqForm">
+                <span class="glyphicon glyphicon-earphone"></span>
+            </button>
+        </div>
         <div class="col-md-offset-1 col-md-3 form1" style="margin-top: 20px;background-color: #F5F5F5">
             <!--            <div id="reqForm" class="modal fade" role="dialog">-->
             <!--                <div class="modal-dialog">
@@ -307,7 +362,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!--                            <button type="button" class="close" data-dismiss="modal" style="transform: rotate(45deg)">&times;</button>-->
                 <h4 class="modal-title">Get contact info</h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="font-family: lato">
                 <div class="form-group form-inline">
                     <label for="name">Name : </label>
                     <input type="name" class="form-control" id="name" style="width: 100%;">
@@ -322,21 +377,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <div class="serv container">
                     <p>Select the services you need :</p>
-                    <label class="chckbx"><input type="checkbox" value=""> Painters</label> &nbsp
-                    <label><input type="checkbox" value=""> Movers</label> <br/>
-                    <label><input type="checkbox" value=""> Carpenters</label>
+                    <label class="container fil">
+                        <input type="checkbox">Painters
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container fil">
+                        <input type="checkbox">Carpenters
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container fil">
+                        <input type="checkbox">Movers
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
                 <div class="checkbox" style="font-size: 12px">
-                    <label><input type="checkbox" id="tandc" value="">Accept our Terms & Conditions</label>
+                    <label><input type="checkbox" id="termsfull" value="">Accept our Terms & Conditions</label>
                 </div>
 
                 <div class="checkbox" style="font-size: 12px">
                     <label><input type="checkbox">Allow us to call you regarding property details</label>
                 </div>
                 <div class="modal-footer">
-                    <input type="button" id="formbtn" onclick="return reqFormSubmit()" value="Submit" class="btn btn-primary" disabled="">
-                    <!--                    <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit</button>-->
-                    <!--                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                    <input type="button" id="submitfull" onclick="return reqFormSubmit()" value="Submit" class="btn btn-primary" disabled="">
                 </div>
             </div>
         </div>
@@ -446,11 +508,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 <div id="reqForm" class="modal fade" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog" style="font-family: lato">
         <div class="modal-content" role="document">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" style="">&times;</button>
-                <h4 class="modal-title">Fill up this request form</h4>
+                <h4 class="modal-title">Get contact info</h4>
             </div>
             <div class="modal-body">
                 <div class="form-group form-inline">
@@ -466,22 +527,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <input type="text" class="form-control" id="number" style="width: 80%; margin-left: 1%">
                 </div>
             </div>
-            <div style="margin-left: 3%;">
-                <div class="serv " style="text-align: center">
+            <div class="container">
+                <div class="serv container">
                     <p>Select the services you need :</p>
-                    <label><input type="checkbox" value=""> Painters</label>
-                    <label><input type="checkbox" value=""> Movers</label>
-                    <label><input type="checkbox" value=""> Carpenters</label>
+                        <label class="fil">
+                            <input type="checkbox">Painters
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="fil">
+                            <input type="checkbox">Carpenters
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="fil">
+                            <input type="checkbox">Movers
+                            <span class="checkmark"></span>
+                        </label>           
                 </div>
-                <div class="checkbox">
-                    <label ><input checked="" type="checkbox" value="">Accept our Terms & Conditions</label>
+                <br/>
+                <div>
+                    <label class="container fil">
+                        <input  id="terms" type="checkbox">Accept Our Terms & Conditions
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
-
-                <div class="checkbox">
-                    <label><input type="checkbox">Allow us to call you regarding property details</label>
+                <div class="">
+                    <label class="container fil">
+                        <input type="checkbox">Allow us to contact you regarding property details
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Submit & Get Info</button>
+                    <button type="submit" id="submit" onclick="return reqFormSubmit()" class="btn btn-primary" disabled="">Submit</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -520,7 +596,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 loop: false
             }
         }
-    })
+    });
 </script>
 
 <script type="text/javascript">
@@ -528,3 +604,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         alert("Successful");
     }
 </script>
+<script>
+    $("#terms").click(function () {
+        $("#submit").attr("disabled", !this.checked);
+    });
+</script>
+<script>
+    $("#termsfull").click(function () {
+        $("#submitfull").attr("disabled", !this.checked);
+    });
+</script>
+
