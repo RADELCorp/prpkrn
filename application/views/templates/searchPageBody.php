@@ -115,6 +115,52 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         letter-spacing: 2px;
         font-family: lato;
     }
+    .fil{
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .fil input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #e0e0e0;
+    }   
+    .fil:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    .fil input:checked ~ .checkmark {
+        background-color: #2196F3;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    .fil input:checked ~ .checkmark:after {
+        display: block;
+    }
+    .fil .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+    }
 </style>
 <div class="container" style="padding: 10px; text-align: center">
     <div>
@@ -127,29 +173,58 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <h3 style="text-align: center"><u><b>FILTERS</b></u></h3>
         <div class="bhk col-md-12 col-xs-12">
             <h5><br/><b>BHK TYPE</b></h5>
-            <div class="col-md-4 col-xs-6"><input type="checkbox" value="1BHK"> 1 </div>
-            <div class="col-md-4 col-xs-6"><input type="checkbox" value="2BHK"> 2 </div>
-            <div class="col-md-4 col-xs-6"><input type="checkbox" value="3BHK"> 3 </div>
-            <div class="col-md-4 col-xs-6"><input type="checkbox" value="4BHK"> 4 </div>
-            <div class="col-md-6 col-xs-6"><input type="checkbox" value="4pBHK"> 4+</div>
+            <label class="container fil col-md-4 col-xs-6">
+                <input type="checkbox">1
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil col-md-4 col-xs-6">
+                <input type="checkbox">2
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil col-md-4 col-xs-6">
+                <input type="checkbox">3
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil col-md-4 col-xs-6">
+                <input type="checkbox">4
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil col-md-6 col-xs-6">
+                <input type="checkbox">4+
+                <span class="checkmark"></span>
+            </label>
         </div>
         <div class="residential col-md-12 col-xs-12">
             <h5><b>RESIDENTIAL</b></h5>
-            <div><input type="checkbox" value="Flat"> Flat <br/></div>
-            <div><input type="checkbox" value="Villa"> Villa/House <br/></div>
+            <label class="container fil">
+                <input type="checkbox">Flat
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil">
+                <input type="checkbox">Villa/House
+                <span class="checkmark"></span>
+            </label>
         </div>
         <div class="price col-md-12 col-xs-12">
             <h5><b>PRICE</b></h5>
-            <div><input type="checkbox" value="catone"> 4,000 - 8,000<br/></div>
-            <div><input type="checkbox" value="cattwo"> 8,000 - 15,000 <br/></div>
-            <div><input type="checkbox" value="catthree"> 15,000 - 25,000 <br/></div>
-            <div><input type="checkbox" value="catfour"> 25,000 + <br/></div>
+            <label class="container fil">
+                <input type="checkbox">4,000 - 8,000
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil">
+                <input type="checkbox">8,000 - 15,000
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil">
+                <input type="checkbox">15,000 - 25,000
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil">
+                <input type="checkbox">25,000 +
+                <span class="checkmark"></span>
+            </label>
+
         </div>
-        <!--        <div id="slider-range"></div>-->
-        <!--        <div>
-                    <p style="padding-top: 40px"><u><br/>PRICE</u> </p>
-                    <input type="text" class="js-range-slider" name="my_range" value="price" />
-                </div>-->
     </div>
     <div class="col-md-9 col-xs-12">
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-xs-3">
