@@ -101,17 +101,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         color: white;
         font-weight: bold;
         background: rgba(0, 0, 0, 0.7);
-        height: auto; 
+        height: auto;
     }
     .bhk, .residential, .price{
         padding:4px;
     }
     .filters{
-        background-color: #eeeeee; 
+        background-color: #eeeeee;
         height: auto;
-        margin-top: 10px; 
+        margin-top: 10px;
         padding-bottom: 10px;
-        margin-left: 15px; 
+        margin-left: 15px;
         letter-spacing: 2px;
         font-family: lato;
     }
@@ -137,7 +137,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         height: 25px;
         width: 25px;
         background-color: #e0e0e0;
-    }   
+    }
     .fil:hover input ~ .checkmark {
         background-color: #ccc;
     }
@@ -163,7 +163,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
     @media(max-width:600px){
         .container .overlay0 {
-            height: 55%;  
+            height: 55%;
         }
         .container .overlay1 {
             bottom: 55%;
@@ -172,11 +172,106 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             padding: 7px;
         }
     }
+    @media (max-width:600px){
+    .filters{
+        display:none;
+    }
+}
+.accordion {
+    margin-left: 30%;
+    padding: 6px;
+    width: 40%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+@media (min-width:600px){
+    .accordion{
+        display:none;
+    }
+}
 </style>
 <div class="container" style="padding: 10px; text-align: center">
     <div>
         <input type="text" placeholder="Locality, Pincode,etc." style="width: 70%;height: 40px;padding: 5px;">
         <button class="btn" style="height:40px; border-radius: 0px;">Search</button>
+    </div>
+</div>
+<div class="col-md-12">
+    <button class="accordion">
+        <h4 style="text-align: center"><u><b>FILTERS</b></u></h4>
+        <span class="glyphicon glyphicon-chevron-down" style="text-align: right"></span>
+    </button>
+
+    <div class="panel">
+        <div class="bhk col-md-12 col-xs-12">
+            <h5><br/><b>BHK TYPE</b></h5>
+            <label class="container fil col-md-4 col-xs-6">
+                <input type="checkbox">1
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil col-md-4 col-xs-6">
+                <input type="checkbox">2
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil col-md-4 col-xs-6">
+                <input type="checkbox">3
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil col-md-4 col-xs-6">
+                <input type="checkbox">4
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil col-md-6 col-xs-6">
+                <input type="checkbox">4+
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="residential col-md-12 col-xs-12">
+            <h5><b>RESIDENTIAL</b></h5>
+            <label class="container fil">
+                <input type="checkbox">Flat
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil">
+                <input type="checkbox">Villa/Independent House
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil">
+                <input type="checkbox">Penthouse
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="price col-md-12 col-xs-12">
+            <h5><b>PRICE</b></h5>
+            <label class="container fil">
+                <input type="checkbox">4,000 - 8,000
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil">
+                <input type="checkbox">8,000 - 15,000
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil">
+                <input type="checkbox">15,000 - 25,000
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil">
+                <input type="checkbox">25,000 +
+                <span class="checkmark"></span>
+            </label>
+        </div>
     </div>
 </div>
 <div class="col-md-12 col-xs-12">
@@ -510,4 +605,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     });
 
 </script>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>

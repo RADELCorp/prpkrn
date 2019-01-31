@@ -181,12 +181,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         padding:  0px;
     }
     .description{
-        text-align: justify;
+        /*        text-align: justify;*/
         font-weight: bold;
         text-align: center;
     }
     .description + h6{
-        position: relative;
+        /*        position: relative;*/
         text-align: justify;
         line-height: 1.5;
     }
@@ -411,13 +411,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-md-12 col-sm-12 col-xs-12 box">
         <div class="col-md-12" style="border-bottom:1px solid grey;">
             <div class="">
-                <h4 class="description"><u>DESCRIPTION</u></h4>
-                <h6 id="property-description">
-                    The premium 5, 4 & 3 BHK apartments from Tulip Infratech, Tulip Ace homes have been developed to surpass even the company's other residential projects in terms of excellence. Tulip Infratech, known for delivering high-class services has gone too far in its approach this time and has come up with homes that talk for themselves just like a pole star shines bright among a cluster of million other stars.
-                </h6>   
-                <hr class="line">
-            </div>
-            <div class="">
                 <h4 class="property-info"><u>PROPERTY INFORMATION </u></h4>
                 <div class="col-md-6" style="text-align: center">
                     <h6 id="property-price">Price : 1,50,00,000 INR </h6>  
@@ -474,18 +467,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <img src="<?php echo base_url('assets/img/partyhall.png'); ?>"/><span>PARTY HALL</span>
                     </div>
                 </div>
-            </div>
-        </div> 
+            </div> 
+        </div>
+        <div class="col-md-12" style="border-top:1px solid grey;">
+            <h4 class="description"><u>DESCRIPTION</u></h4>
+            <h6 id="property-description" style="text-align: center">
+                The premium 5, 4 & 3 BHK apartments from Tulip Infratech, Tulip Ace homes have been developed to surpass even the company's other residential projects in terms of excellence. Tulip Infratech, known for delivering high-class services has gone too far in its approach this time and has come up with homes that talk for themselves just like a pole star shines bright among a cluster of million other stars.
+            </h6>
+        </div>
     </div>
-    <div class="col-md-12 location" style="text-align:center">
-        <br/>
-        <h3 style="font-weight:bold"><u> Our Location</u> </h3>
-        <br/>
-    </div>
-    <div class="col-md-12">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15554.77134221551!2d77.5905968!3d12.92745305!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77fa77df36f6afa7!2sRADEL+CORP!5e0!3m2!1sen!2sin!4v1542622320218" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <br/>
-    </div>  
+    <!--    <div class="col-md-12 location" style="text-align:center">
+            <br/>
+            <h3 style="font-weight:bold"><u> Our Location</u> </h3>
+            <br/>
+        </div>
+        <div class="col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15554.77134221551!2d77.5905968!3d12.92745305!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77fa77df36f6afa7!2sRADEL+CORP!5e0!3m2!1sen!2sin!4v1542622320218" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <br/>
+        </div>  -->
 
 </div>
 <div class="text" style="text-align:center;">
@@ -530,18 +529,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="container">
                 <div class="serv container">
                     <p>Select the services you need :</p>
-                        <label class="fil">
-                            <input type="checkbox">Painters
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="fil">
-                            <input type="checkbox">Carpenters
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="fil">
-                            <input type="checkbox">Movers
-                            <span class="checkmark"></span>
-                        </label>           
+                    <label class="fil">
+                        <input type="checkbox">Painters
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="fil">
+                        <input type="checkbox">Carpenters
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="fil">
+                        <input type="checkbox">Movers
+                        <span class="checkmark"></span>
+                    </label>           
                 </div>
                 <br/>
                 <div>
