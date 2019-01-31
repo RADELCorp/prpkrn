@@ -87,7 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         font-family: serif;
     }
     .overlay0 .bhk{
-        font-size: 12px;
+        font-size: 10px;
         padding : 6px;
         margin-top: 2px;
     }
@@ -170,6 +170,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }
         .overlay0 .hoverthumbnail {
             padding: 7px;
+        }
+        .overlay0 .bhk{
+            font-size: 12px;
+            padding : 6px;
+            margin-top: 2px;
         }
     }
     @media (max-width:600px){
