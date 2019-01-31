@@ -468,7 +468,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="row">
-        <div class="col-md-2 col-md-offset-10" style="height:70px;">
+        <div class="col-md-2 col-md-offset-10" style="height:70px; text-align: center;">
             <button type="button" class="addlisting-submit btn btn-default btn-lg">Submit</button>
         </div>
     </div>
