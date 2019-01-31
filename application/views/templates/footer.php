@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="footertext">
     <div class="row rowAlign" style="background-color:black;padding-top: 15px;">
         <div class="col-md-12 col-sm-12">
-            <div class="col-md-3 col-sm-3 col-xs-12 hidden-xs" style="padding-left: 8%">
+            <div class="col-md-3 col-sm-3 col-xs-12" style="padding-left: 8%">
                 <p class="footertitle"><b>EXPLORE</b></p>
                 <hr style="margin-top:1%" width="45px;" align="left">
                 <div class="footerSubHeadings">
@@ -46,12 +46,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <p>BLOGS</p>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 hidden-xs" style="padding-left: 8%">
+            <div class="col-md-3 col-sm-3 col-xs-12" style="padding-left: 8%">
                 <p class="footertitle"><b>VISIT</b></p>
                 <hr style="margin-top:1%" width="45px;" align="left">
                 <p class="footerSubHeadings"> No 2, Ground floor,<br> 29th Main Road,<br> Kuvempu Nagar,<br> BTM Layout 2nd Stage,<br> Bengaluru,<br> Karnataka 560076</p>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 hidden-xs" style="padding-left: 8%">
+            <div class="col-md-3 col-sm-3 col-xs-12" style="padding-left: 8%">
                 <p class="footertitle"><b>CONTACT US</b></p>
                 <hr style="margin-top:1%" width="45px;" align="left">
                 <div class="footerSubHeadings">
