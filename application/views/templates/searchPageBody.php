@@ -163,10 +163,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
     @media(max-width:600px){
         .container .overlay0 {
-            height: 45%;
+            height: 55%;  
         }
         .container .overlay1 {
-            bottom: 45%;
+            bottom: 55%;
+        }
+        .overlay0 .hoverthumbnail {
+            padding: 7px;
         }
     }
 </style>
@@ -235,21 +238,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <div class="col-md-9 col-xs-12">
-        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-xs-3">
+        <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
                 <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
-                        <div style="font-size:16px;text-align: center;color: black;"><b>Platina Exotica</b></div>
+                        <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
-                                <div id="property-bath" class="col-xs-3" style="text-align:center">BATH<br>3</div>
+                                <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
                                 <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
@@ -266,9 +269,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -289,9 +292,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -312,9 +315,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -335,9 +338,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -358,9 +361,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -381,9 +384,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                           <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -404,9 +407,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -427,9 +430,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -450,9 +453,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -473,9 +476,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-xs-4 bhk text-right" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
+                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
