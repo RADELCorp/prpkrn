@@ -178,34 +178,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }
     }
     @media (max-width:600px){
-    .filters{
-        display:none;
+        .filters{
+            display:none;
+        }
     }
-}
-.accordion {
-    margin-left: 30%;
-    padding: 6px;
-    width: 40%;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-.active, .accordion:hover {
-    background-color: #ccc;
-}
-
-.panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-}
-@media (min-width:600px){
-    .accordion{
-        display:none;
+    .accordion {
+        margin-left: 30%;
+        padding: 6px;
+        width: 40%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
     }
-}
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+    }
+    @media (min-width:600px){
+        .accordion{
+            display:none;
+        }
+    }
 </style>
 <div class="container" style="padding: 10px; text-align: center">
     <div>
@@ -214,9 +210,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 <div class="col-md-12">
-    <button class="accordion">
-        <h4 style="text-align: center"><u><b>FILTERS</b></u></h4>
-        <span class="glyphicon glyphicon-chevron-down" style="text-align: right"></span>
+    <button class="accordion btn btn-primary" id="accordion">
+        <div class="row">
+            <h4 style="text-align: center; letter-spacing: 1.5px;"><b>FILTERS</b></h4>
+            <span id="fildown" class="glyphicon glyphicon-chevron-down" onclick="filtoggle(this)" style="text-align: right"></span>
+        </div>
     </button>
 
     <div class="panel">
@@ -312,7 +310,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <span class="checkmark"></span>
             </label>
             <label class="container fil">
-                <input type="checkbox">Villa/House
+                <input type="checkbox">Villa/Independent House
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fil">
+                <input type="checkbox">Penthouse
                 <span class="checkmark"></span>
             </label>
         </div>
@@ -484,7 +486,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                           <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
                             <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
                             <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
                             <div class="col-xs-12 hoverthumbnail">
@@ -625,4 +627,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             }
         });
     }
+</script>
+<script>
+    $('#accordion').click(function () {
+        $('#fildown').toggle('500');
+        $("i", this).toggleClass("glyphicon glyphicon-chevron-up");
+    });
 </script>
