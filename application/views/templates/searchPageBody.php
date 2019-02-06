@@ -202,6 +202,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             display:none;
         }
     }
+    .modal-body{
+        background-color: whitesmoke;
+    }
 </style>
 <div class="container" style="padding: 10px; text-align: center">
     <div>
@@ -210,70 +213,81 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 <div class="col-md-12">
-    <button class="accordion btn btn-primary" id="accordion">
-        <div class="row">
+    <div style="text-align:center">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#filters">
             <h4 style="text-align: center; letter-spacing: 1.5px;"><b>FILTERS</b></h4>
-            <span id="fildown" class="glyphicon glyphicon-chevron-down" onclick="filtoggle(this)" style="text-align: right"></span>
-        </div>
-    </button>
-
-    <div class="panel">
-        <div class="bhk col-md-12 col-xs-12">
-            <h5><br/><b>BHK TYPE</b></h5>
-            <label class="container fil col-md-4 col-xs-6">
-                <input type="checkbox">1
-                <span class="checkmark"></span>
-            </label>
-            <label class="container fil col-md-4 col-xs-6">
-                <input type="checkbox">2
-                <span class="checkmark"></span>
-            </label>
-            <label class="container fil col-md-4 col-xs-6">
-                <input type="checkbox">3
-                <span class="checkmark"></span>
-            </label>
-            <label class="container fil col-md-4 col-xs-6">
-                <input type="checkbox">4
-                <span class="checkmark"></span>
-            </label>
-            <label class="container fil col-md-6 col-xs-6">
-                <input type="checkbox">4+
-                <span class="checkmark"></span>
-            </label>
-        </div>
-        <div class="residential col-md-12 col-xs-12">
-            <h5><b>RESIDENTIAL</b></h5>
-            <label class="container fil">
-                <input type="checkbox">Flat
-                <span class="checkmark"></span>
-            </label>
-            <label class="container fil">
-                <input type="checkbox">Villa/Independent House
-                <span class="checkmark"></span>
-            </label>
-            <label class="container fil">
-                <input type="checkbox">Penthouse
-                <span class="checkmark"></span>
-            </label>
-        </div>
-        <div class="price col-md-12 col-xs-12">
-            <h5><b>PRICE</b></h5>
-            <label class="container fil">
-                <input type="checkbox">4,000 - 8,000
-                <span class="checkmark"></span>
-            </label>
-            <label class="container fil">
-                <input type="checkbox">8,000 - 15,000
-                <span class="checkmark"></span>
-            </label>
-            <label class="container fil">
-                <input type="checkbox">15,000 - 25,000
-                <span class="checkmark"></span>
-            </label>
-            <label class="container fil">
-                <input type="checkbox">25,000 +
-                <span class="checkmark"></span>
-            </label>
+        </button>
+    </div>
+    <div id="filters" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="font-family: lato">
+            <div class="modal-content" role="document">
+                <div class="modal-header">
+                    <h4 class="modal-title">Filters</h4>
+                </div>
+                <div class="container">
+                    <div class="bhk col-md-12 col-xs-12">
+                        <h5><br/><b>BHK TYPE</b></h5>
+                        <label class="container fil col-md-4 col-xs-6">
+                            <input type="checkbox">1
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container fil col-md-4 col-xs-6">
+                            <input type="checkbox">2
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container fil col-md-4 col-xs-6">
+                            <input type="checkbox">3
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container fil col-md-4 col-xs-6">
+                            <input type="checkbox">4
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container fil col-md-6 col-xs-6">
+                            <input type="checkbox">4+
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="residential col-md-12 col-xs-12">
+                        <h5><b>RESIDENTIAL</b></h5>
+                        <label class="container fil">
+                            <input type="checkbox">Flat
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container fil">
+                            <input type="checkbox">Villa/Independent House
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container fil">
+                            <input type="checkbox">Penthouse
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="price col-xs-12">
+                        <h5><b>PRICE</b></h5>
+                        <label class="container fil col-xs-6">
+                            <input type="checkbox">4,000 - 8,000
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container fil col-xs-6">
+                            <input type="checkbox">8,000 - 15,000
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container fil col-xs-6">
+                            <input type="checkbox">15,000 - 25,000
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container fil col-xs-6">
+                            <input type="checkbox">25,000 +
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer" style="text-align: center">
+                    <button type="submit" id="submit" onclick="return reqFormSubmit()" class="btn btn-primary">Apply</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>     
         </div>
     </div>
 </div>
