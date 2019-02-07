@@ -375,9 +375,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -391,16 +391,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </a>
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
-                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/12.jpg'); ?>)">
+                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
                         <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -414,16 +414,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </a>
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
-                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/13.jpg'); ?>)">
+                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
                         <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -437,16 +437,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </a>
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
-                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/14.jpg'); ?>)">
+                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
                         <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -460,16 +460,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </a>
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
-                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/15.jpg'); ?>)">
+                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
                         <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -483,16 +483,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </a>
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
-                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/16.jpg'); ?>)">
+                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
                         <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -506,16 +506,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </a>
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
-                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/17.jpg'); ?>)">
+                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
                         <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -529,16 +529,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </a>
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
-                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/13.jpg'); ?>)">
+                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
                         <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -552,16 +552,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </a>
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
-                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/14.jpg'); ?>)">
+                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
                         <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -575,16 +575,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </a>
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
-                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/15.jpg'); ?>)">
+                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
                         <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
@@ -598,16 +598,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </a>
         <a href="<?php echo base_url('details'); ?>"><div class="container feat col-md-4 col-sm-6">
-                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/16.jpg'); ?>)">
+                <div class="search-listing-container" style="background-image: url(<?php echo base_url('assets/img/11.jpg'); ?>)">
                     <div class="col-md-3 col-md-offset-9 status">Ready To Move</div>
                     <div class="overlay1">
                         <div style="font-size:16px;text-align: center;"><b>Lorem Ipsum home.</b></div>
                     </div>
                     <div class="overlay0">
                         <div style="color:white;float: left;font-size: 14px;">
-                            <div class="col-md-3 col-xs-6 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
-                            <div class="col-md-5 col-xs-6 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar,Bengaluru</div>
-                            <div class="col-md-4 col-xs-12 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Now</div>
+                            <div class="col-md-3 col-xs-3 amount"><span class="rupee-symbol"></span> 1.5 Cr</div>
+                            <div class="col-md-4 col-xs-5 bhk text-right" ><i class="fa fa-map-marker" style="color:red;"></i>&nbsp;Jayanagar</div>
+                            <div class="col-md-5 col-xs-4 bhk text-center" ><i class="fa fa-phone" style="color:red;"></i>&nbsp;Contact Us</div>
                             <div class="col-xs-12 hoverthumbnail">
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
