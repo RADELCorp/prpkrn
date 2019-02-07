@@ -198,8 +198,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         overflow: hidden;
     }
     @media (min-width:600px){
-        .accordion{
-            display:none;
+        .filmodal{
+            display: none;
         }
     }
     .modal-body{
@@ -213,7 +213,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 <div class="col-md-12">
-    <div style="text-align:center">
+    <div class="filmodal" style="text-align:center">
         <button class="btn btn-primary" data-toggle="modal" data-target="#filters">
             <h4 style="text-align: center; letter-spacing: 1.5px;"><b>FILTERS</b></h4>
         </button>
