@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         margin-bottom: 15px;
         background-repeat: no-repeat;
         background-size: cover;
-        height:250px;
+        height:35vh;
         padding: 10px;
     }
     .placeholder-control::placeholder {
@@ -163,10 +163,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
     @media(max-width:600px){
         .container .overlay0 {
-            height: 55%;
+            height: 17vh;
         }
         .container .overlay1 {
-            bottom: 55%;
+            bottom: 17vh;
         }
         .overlay0 .hoverthumbnail {
             padding: 7px;
@@ -175,6 +175,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             font-size: 12px;
             padding : 6px;
             margin-top: 2px;
+        }
+        .feat {
+            height: 58vh;
+            border: 1px solid black;
+        }
+        .container:hover .overlay0 {
+            height: 17vh;
+        }
+        .container:hover .overlay1 {
+            bottom: 17vh;
+        }
+        .result-thumbnail{
+            margin-top: 3vh;
         }
     }
     @media (max-width:600px){
@@ -190,7 +203,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         outline: none;
         transition: 0.4s;
     }
-
+    
     .panel {
         padding: 0 18px;
         display: none;
@@ -291,7 +304,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-md-12 col-xs-12">
+<div class="col-md-12 col-xs-12" class="result-thumbnail">
     <div class="col-md-2 col-xs-11 filters" style="">
         <h3 style="text-align: center"><u><b>FILTERS</b></u></h3>
         <div class="bhk col-md-12 col-xs-12">
