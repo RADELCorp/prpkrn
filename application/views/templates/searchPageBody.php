@@ -82,7 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         padding: 25px;
     }
     .overlay0 .amount{
-        font-size: 17px;
+        font-size: 1em;
         padding: 5px;
         font-family: serif;
     }
@@ -170,9 +170,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }
         .overlay0 .hoverthumbnail {
             padding: 7px;
+            font-size: 12px;
         }
         .overlay0 .bhk{
-            font-size: 12px;
+            font-size: 10px;
             padding : 6px;
             margin-top: 2px;
         }
@@ -203,7 +204,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         outline: none;
         transition: 0.4s;
     }
-    
+
     .panel {
         padding: 0 18px;
         display: none;
@@ -215,9 +216,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             display: none;
         }
     }
+    
     .modal-body{
         background-color: whitesmoke;
     }
+
 </style>
 <div class="container" style="padding: 10px; text-align: center">
     <div>
@@ -382,7 +385,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
@@ -405,7 +408,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
@@ -428,7 +431,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
@@ -451,7 +454,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
@@ -474,7 +477,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
@@ -497,7 +500,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
@@ -520,7 +523,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
@@ -543,7 +546,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
@@ -566,7 +569,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
@@ -589,7 +592,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
@@ -612,7 +615,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="col-xs-3" style="text-align:center">AREA<br>1080Sqft.</div>
                                 <div class="col-xs-3" style="text-align:center">BHK<br>4</div>
                                 <div class="col-xs-3" style="text-align:center">BATH<br>3</div>
-                                <div class="col-xs-3" style="text-align:center">PARKING<br>YES</div>
+                                <div class="col-xs-3" style="text-align:center">PARK<br>YES</div>
                                 <!--<div class="col-xs-12" style="text-align:center;padding-top:18px;">STATUS : Ready To Move</div>-->
                             </div>
                         </div>
